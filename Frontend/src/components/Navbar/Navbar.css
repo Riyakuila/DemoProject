@@ -1,0 +1,127 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 120px; /* Navbar ki height jitna space upar chhodne ke liye */
+    background: #030303;
+    font-family: "poppins","segoe UI", sans-serif;
+}
+
+section{
+    scroll-margin-top: 90px;
+}
+
+.logoBox{
+    width: 290px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    mix-blend-mode: lighten;
+}
+
+.logo {
+    width: 220px;
+    height: 300px;
+    mix-blend-mode: lighten;
+    cursor: pointer;
+    object-fit: contain;
+    display: block;
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    /* background-color: rgb(23, 4, 74); */
+    background: linear-gradient(90deg, #050505 0%, #130137 45%, #17023e 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    /* flex-wrap: wrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); */
+     border-bottom: 1px solid rgba(95, 68, 19, 0.25);
+  box-shadow: 0 8px 25px rgba(17, 18, 19, 0.45);
+    
+}
+
+
+/* Optional: Add a subtle shadow for better visibility when scrolling */
+
+
+/* nav h1 {
+    color: rgb(145, 100, 18);
+    font-size: 2rem;
+} */
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul li {
+    color: white;
+   
+    cursor: pointer;
+    transition: 0.3s;
+    /* font-size: 30px; */
+    font-size: 1.9rem;
+    font-weight: 490;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover {
+    color: orange;
+}
+
+
+.nav ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #ff9d00;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  transition: width 0.3s ease;
+}
+
+
+.nav ul li:hover::after {
+  width: 100%;
+}
+
+
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px; /* Agar mobile mein navbar height kam ho toh adjust karein */
+    }
+    nav {
+        height: auto;
+        padding: 15px 20px;
+    }
+    nav ul li{
+        font-size: 14px;
+    }
+    section{
+        scroll-margin-top: 80px;
+    }
+}

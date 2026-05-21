@@ -1,9 +1,17 @@
-function App() {
-  return (
-    <div>
-      <h1>Welcome to Drkikha Infotech Private limited</h1>
-    </div>
-  )
-}
+import Navbar from "./components/Navbar/Navbar";
+// import Hero from "./components/Hero/Hero";
+// import About from "./components/About/About";
 
-export default App
+function App(){
+  return(
+    <>
+    <Navbar/>
+    {/* <Hero />
+    <About/> */}
+    </>
+  );
+}
+export default App;
+
+
+      
