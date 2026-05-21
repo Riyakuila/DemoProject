@@ -8,7 +8,7 @@ const Navbar = () => {
     if(el) el.scrollIntoView({behavior: "smooth"});
     };
   return (
-    <nav classname="navbar">
+    <nav className="navbar">
         <div className="logoBox" onClick={()=> scrollTo("home")}>
       
             <img src={logo} alt ="logo" className ="logo" />

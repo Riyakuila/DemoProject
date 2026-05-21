@@ -20,17 +20,18 @@ section{
 }
 
 .logoBox{
-    width: 290px;
-    height: 80px;
+    width: 230px;
+    height: 90px;
     display: flex;
     align-items: center;
     cursor: pointer;
     mix-blend-mode: lighten;
+    overflow: hidden;
 }
 
 .logo {
-    width: 220px;
-    height: 300px;
+    width: 230px;
+    height: auto;
     mix-blend-mode: lighten;
     cursor: pointer;
     object-fit: contain;
@@ -41,7 +42,7 @@ nav {
     width: 100%;
     height: 120px;
     /* background-color: rgb(23, 4, 74); */
-    background: linear-gradient(90deg, #050505 0%, #130137 45%, #17023e 100%);
+    background: linear-gradient(90deg, #050505 0%, #0e0128 45%, #140234 100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -57,14 +58,6 @@ nav {
     
 }
 
-
-/* Optional: Add a subtle shadow for better visibility when scrolling */
-
-
-/* nav h1 {
-    color: rgb(145, 100, 18);
-    font-size: 2rem;
-} */
 
 nav ul {
     display: flex;
@@ -91,7 +84,7 @@ nav ul li:hover {
 }
 
 
-.nav ul li::after {
+.navbar ul li::after {
   content: "";
   width: 0;
   height: 2px;
@@ -103,7 +96,7 @@ nav ul li:hover {
 }
 
 
-.nav ul li:hover::after {
+.navbar ul li:hover::after {
   width: 100%;
 }
 
