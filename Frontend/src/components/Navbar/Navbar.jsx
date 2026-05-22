@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import logo from "../../assets/logo1.png";
+import logo from "../../assets/logo.png";
 
 function Navbar() {
   return (
@@ -8,7 +8,7 @@ function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-xl"
+      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/55 backdrop-blur-xl"
     >
       <div className="w-full px-4 sm:px-6 lg:px-10 2xl:px-0">
         
@@ -18,7 +18,7 @@ function Navbar() {
             <img
               src={logo}
               alt="Driksha Logo"
-              className="h-8 w-auto object-contain transition duration-300 hover:scale-105 sm:h-9 md:h-10 lg:h-12 2xl:h-14"
+              className="h-8 w-auto object-contain transition duration-300 hover:scale-105 sm:h-9 md:h-10 lg:h-12 2xl:h-14 cursor-pointer"
             />
           </div>
 
@@ -30,6 +30,11 @@ function Navbar() {
             </a>
 
             <a href="#" className="transition duration-300 hover:text-orange-400">
+              About
+            </a>
+
+
+            <a href="#" className="transition duration-300 hover:text-orange-400">
               Services
             </a>
 
@@ -39,10 +44,6 @@ function Navbar() {
 
             <a href="#" className="transition duration-300 hover:text-orange-400">
               Portfolio
-            </a>
-
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              About
             </a>
 
             <a href="#" className="transition duration-300 hover:text-orange-400">
