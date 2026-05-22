@@ -6,7 +6,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-container">
         <h1 className="hero-title">
-          An Intelligent Operating System for Your Business
+          Building Intelligent Digital Solutions With AI
           
         </h1>
         <p className="hero-subtitle">
