@@ -19,12 +19,12 @@ const Hero =() => {
             <div className="absolute bottom-10 left-10 w-72 h-72 bg-orange-300/10 blur-3xl rounded-full"></div>
 
             <div className="relative z-10 max-w-5xl px-6">
-                <h1 className="text-white text-7xl md:text-7xl font-bold leading-tight">
+                <h1 className="text-white text-7xl md:text-6xl font-bold leading-tight">
                     Building Intelligent <br/>
                     Digital Solution With AI
                 </h1>
 
-                <p className="mt-6 text-lg md:text-4xl text-gray-300">
+                <p className="mt-6 text-lg md:text-2xl text-gray-300">
                     <span className="bg-gradient-to-r from-orange-400 to-yellow-300 bg-clip-text text-transparent font-semibold">
                         by Driksha Infotech Private Limited
                     </span>

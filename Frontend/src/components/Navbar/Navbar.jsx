@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo1.png";
 
 function Navbar() {
   return (
@@ -8,7 +8,7 @@ function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/55 backdrop-blur-xl"
+      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-xl"
     >
       <div className="w-full px-4 sm:px-6 lg:px-10 2xl:px-0">
         
@@ -17,8 +17,8 @@ function Navbar() {
           <div className="flex items-center shrink-0">
             <img
               src={logo}
-              alt="Driksha Logo"
-              className="h-8 w-auto object-contain transition duration-300 hover:scale-105 sm:h-9 md:h-10 lg:h-12 2xl:h-14 cursor-pointer"
+              alt="Driksha Infotech Logo"
+              className="h-10 w-auto object-contain mix-blend-lighten transition duration-300 hover:scale-105 sm:h-9 md:h-10 lg:h-12 2xl:h-14"
             />
           </div>
 
@@ -28,11 +28,6 @@ function Navbar() {
             <a href="#" className="transition duration-300 hover:text-orange-400">
               Home
             </a>
-
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              About
-            </a>
-
 
             <a href="#" className="transition duration-300 hover:text-orange-400">
               Services
@@ -47,8 +42,24 @@ function Navbar() {
             </a>
 
             <a href="#" className="transition duration-300 hover:text-orange-400">
+              Technologies
+            </a>
+
+            <a href="#" className="transition duration-300 hover:text-orange-400">
+              About
+            </a>
+
+            <a href="#" className="transition duration-300 hover:text-orange-400">
+              Careers
+            </a>
+            <a href="#" className="transition duration-300 hover:text-orange-400">
+              Blogs
+            </a>
+
+            <a href="#" className="transition duration-300 hover:text-orange-400">
               Contact
             </a>
+
           </div>
 
           {/* Right Buttons */}
@@ -58,8 +69,8 @@ function Navbar() {
               AI Assistant
             </button>
 
-            <button className="rounded-xl bg-linear-to-r from-orange-500 to-amber-400 px-4 py-2 text-sm font-semibold text-black transition duration-300 hover:scale-105 2xl:px-6 2xl:py-2.5">
-              Start Project
+            <button className="rounded-xl bg-gradient-to-r from-orange-500 to-amber-400 px-4 py-2 text-sm font-semibold text-black transition duration-300 hover:scale-105 2xl:px-6 2xl:py-2.5">
+              Live Demo
             </button>
           </div>
 
