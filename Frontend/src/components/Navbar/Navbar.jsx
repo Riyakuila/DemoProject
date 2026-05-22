@@ -8,95 +8,63 @@ function Navbar() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-black/30 backdrop-blur-xl"
+      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-xl"
     >
-      <div className="w-full px-6 lg:px-12">
+      <div className="w-full px-4 sm:px-6 lg:px-10 2xl:px-0">
         
-        <div className="flex h-20 items-center justify-between">
+        <div className="mx-auto flex h-16 max-w-400 items-center justify-between sm:h-18 lg:h-20">
 
-          <div className="flex items-center">
+          <div className="flex items-center shrink-0">
             <img
               src={logo}
               alt="Driksha Logo"
-              className="h-8 sm:h-8 md:h-10 lg:h-14 w-auto object-contain hover:scale-105 transition duration-300"
+              className="h-8 w-auto object-contain transition duration-300 hover:scale-105 sm:h-9 md:h-10 lg:h-12 2xl:h-14"
             />
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-10 text-[15px] font-medium text-gray-300">
+          <div className="hidden xl:flex items-center text-sm font-medium text-gray-300 xl:gap-6 2xl:gap-10 2xl:text-[15px]">
 
-            <a
-              href="#"
-              className="hover:text-orange-400 transition duration-300"
-            >
+            <a href="#" className="transition duration-300 hover:text-orange-400">
               Home
             </a>
 
-            <a
-              href="#"
-              className="hover:text-orange-400 transition duration-300"
-            >
+            <a href="#" className="transition duration-300 hover:text-orange-400">
               Services
             </a>
 
-            <a
-              href="#"
-              className="hover:text-orange-400 transition duration-300"
-            >
+            <a href="#" className="transition duration-300 hover:text-orange-400">
               Solutions
             </a>
 
-            <a
-              href="#"
-              className="hover:text-orange-400 transition duration-300"
-            >
+            <a href="#" className="transition duration-300 hover:text-orange-400">
               Portfolio
             </a>
 
-            <a
-              href="#"
-              className="hover:text-orange-400 transition duration-300"
-            >
+            <a href="#" className="transition duration-300 hover:text-orange-400">
               About
             </a>
 
-            <a
-              href="#"
-              className="hover:text-orange-400 transition duration-300"
-            >
+            <a href="#" className="transition duration-300 hover:text-orange-400">
               Contact
             </a>
           </div>
 
           {/* Right Buttons */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden xl:flex items-center xl:gap-3 2xl:gap-4">
 
-            <button
-              className="
-                border
-                border-orange-500/30
-                bg-orange-500/10
-                text-orange-400
-                px-5
-                py-2
-                rounded-xl
-                hover:bg-orange-500/20
-                transition
-                duration-300
-              "
-            >
+            <button className="rounded-xl border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-sm text-orange-400 transition duration-300 hover:bg-orange-500/20 2xl:px-5 2xl:py-2.5">
               AI Assistant
             </button>
 
-            <button
-              className="bg-linear-to-r from-orange-500 to-amber-400 text-black font-semibold px-5 py-2 rounded-xl hover:scale-105 transition duration-300"
-            >
+            <button className="rounded-xl bg-linear-to-r from-orange-500 to-amber-400 px-4 py-2 text-sm font-semibold text-black transition duration-300 hover:scale-105 2xl:px-6 2xl:py-2.5">
               Start Project
             </button>
           </div>
 
-          <div className="lg:hidden text-white text-3xl cursor-pointer">
-            <HiOutlineMenuAlt3 />
+          {/* Mobile / Tablet Menu */}
+          <div className="flex cursor-pointer items-center text-white xl:hidden">
+            <HiOutlineMenuAlt3 className="text-3xl sm:text-4xl" />
           </div>
 
         </div>
