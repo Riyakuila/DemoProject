@@ -18,7 +18,7 @@ function Navbar() {
             <img
               src={logo}
               alt="Driksha Infotech Logo"
-              className="h-10 w-auto object-contain mix-blend-lighten transition duration-300 hover:scale-105 sm:h-9 md:h-10 lg:h-12 2xl:h-14"
+              className="h-10 w-auto object-contain mix-blend-lighten transition duration-300 hover:scale-105 sm:h-9 md:h-10 lg:h-12 2xl:h-17"
             />
           </div>
 
