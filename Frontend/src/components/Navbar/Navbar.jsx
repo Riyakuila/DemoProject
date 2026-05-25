@@ -18,12 +18,12 @@ function Navbar() {
             <img
               src={logo}
               alt="Driksha Infotech Logo"
-              className="h-10 w-auto object-contain mix-blend-lighten transition duration-300 hover:scale-105 sm:h-9 md:h-10 lg:h-12 2xl:h-17"
+              className="h-12 w-auto object-contain mix-blend-lighten transition duration-300 hover:scale-105 sm:h-12 md:h-14 lg:h-18 2xl:h-20 cursor-pointer"
             />
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden xl:flex items-center text-sm font-medium text-gray-300 xl:gap-6 2xl:gap-10 2xl:text-[15px]">
+          <div className="hidden xl:flex items-center text-base font-medium text-gray-300 xl:gap-6 2xl:gap-10 2xl:text-[15px]">
 
             <a href="#" className="transition duration-300 hover:text-orange-400">
               Home
@@ -62,7 +62,6 @@ function Navbar() {
 
           </div>
 
-          {/* Right Buttons */}
           <div className="hidden xl:flex items-center xl:gap-3 2xl:gap-4">
 
             <button className="rounded-xl border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-sm text-orange-400 transition duration-300 hover:bg-orange-500/20 2xl:px-5 2xl:py-2.5">
