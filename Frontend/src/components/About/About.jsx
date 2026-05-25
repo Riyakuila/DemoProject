@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function About() {
   return (
-    <section className="relative overflow-hidden bg-[#050505] px-4 py-28 sm:px-6 lg:px-10">
+    <section className="relative overflow-hidden bg-[#050505] px-4 py-20 sm:px-6 lg:px-10">
 
       {/* Glow Background */}
       <div className="absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-orange-500/10 blur-3xl"></div>
