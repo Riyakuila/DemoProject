@@ -5,11 +5,10 @@ function About() {
     <section className="relative overflow-hidden bg-[#050505] px-4 py-20 sm:px-6 lg:px-10">
 
       {/* Glow Background */}
-      <div className="absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-orange-500/10 blur-3xl"></div>
+      <div className="absolute left-1/2 top-1/2 h-100 w-100 -translate-x-1/2 -translate-y-1/2 rounded-full bg-orange-500/10 blur-3xl"></div>
 
-      <div className="relative mx-auto max-w-[1100px] text-center">
+      <div className="relative mx-auto max-w-275 text-center">
 
-        {/* Small Badge */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +19,6 @@ function About() {
           About Driksha Infotech
         </motion.div>
 
-        {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,12 +27,11 @@ function About() {
           className="mx-auto max-w-5xl text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl"
         >
           Innovative Solutions For A
-          <span className="bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent">
             {" "}Digital World
           </span>
         </motion.h2>
 
-        {/* Description */}
         <motion.p
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +46,6 @@ function About() {
           performance, and long-term business growth.
         </motion.p>
 
-        {/* Secondary Text */}
         <motion.p
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +58,6 @@ function About() {
           into reality.
         </motion.p>
 
-        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +65,7 @@ function About() {
           viewport={{ once: true }}
           className="mt-12"
         >
-          <button className="rounded-xl bg-gradient-to-r from-orange-500 to-amber-400 px-7 py-3 font-semibold text-black transition duration-300 hover:scale-105">
+          <button className="rounded-xl bg-linear-to-r from-orange-500 to-amber-400 px-7 py-3 font-semibold text-black transition duration-300 hover:scale-105">
             Explore Services
           </button>
         </motion.div>

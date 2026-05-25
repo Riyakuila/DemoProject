@@ -47,7 +47,7 @@ function Services() {
       id="services"
       className="relative overflow-hidden bg-[#000000] px-5 py-20 md:px-12 lg:px-20"
     >
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_0.6px,transparent_0.6px),linear-gradient(to_bottom,#80808012_0.6px,transparent_0.6px)] bg-[size:58px_58px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_0.6px,transparent_0.6px),linear-gradient(to_bottom,#80808012_0.6px,transparent_0.6px)] bg-size-[58px_58px]" />
 
       <div className="absolute -left-24 top-20 h-80 w-80 rounded-full bg-[#ff8a00]/20 blur-[100px]" />
       <div className="absolute -bottom-40 right-20 h-72 w-72 rounded-full bg-[#ffb300]/15 blur-[90px]" />
@@ -60,7 +60,7 @@ function Services() {
 
           <h2 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
             Futuristic Software Solutions for{" "}
-            <span className="bg-gradient-to-r from-[#cf7004] to-[#da9b08] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#cf7004] to-[#da9b08] bg-clip-text text-transparent">
               Modern Businesses
             </span>
           </h2>
@@ -75,7 +75,7 @@ function Services() {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="group relative overflow-hidden rounded-4xl border border-[#ff8a00]/22 bg-white/[0.04] p-9 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-[#ffb300]/70 hover:shadow-[0_0_35px_rgba(255,138,0,0.25)]"
+              className="group relative overflow-hidden rounded-4xl border border-[#ff8a00]/22 bg-white/4 p-9 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-[#ffb300]/70 hover:shadow-[0_0_35px_rgba(255,138,0,0.25)]"
             >
               <div className="absolute -right-18 -top-13 h-40 w-40 rounded-full bg-[#ff8a00]/23 blur-3xl transition duration-700 group-hover:scale-150 group-hover:bg-[#ffb300]/30" />
 

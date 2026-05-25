@@ -12,7 +12,7 @@ function Navbar() {
     >
       <div className="w-full px-4 sm:px-6 lg:px-10 2xl:px-0">
         
-        <div className="mx-auto flex h-16 max-w-400 items-center justify-between sm:h-18 lg:h-20">
+        <div className="mx-auto flex h-16 max-w-400 items-center justify-between sm:h-18 lg:h-28">
 
           <div className="flex items-center shrink-0">
             <img
@@ -69,7 +69,7 @@ function Navbar() {
               AI Assistant
             </button>
 
-            <button className="rounded-xl bg-gradient-to-r from-orange-500 to-amber-400 px-4 py-2 text-sm font-semibold text-black transition duration-300 hover:scale-105 2xl:px-6 2xl:py-2.5">
+            <button className="rounded-xl bg-linear-to-r from-orange-500 to-amber-400 px-4 py-2 text-sm font-semibold text-black transition duration-300 hover:scale-105 2xl:px-6 2xl:py-2.5">
               Live Demo
             </button>
           </div>
