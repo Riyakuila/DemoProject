@@ -13,6 +13,7 @@
 
 
 import React from "react";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -54,24 +55,66 @@ function Services() {
 
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="mx-auto mb-16 max-w-4xl text-center">
-          <span className="mb-5 inline-block rounded-full border border-[#ff8a00]/40 bg-[#ff8a00]/10 px-7 py-3 text-sm font-semibold text-[#ffb300] shadow-[0_0_15px_rgba(255,138,0,0.2)]">
+          {/* <span className="mb-5 inline-block rounded-full border border-[#ff8a00]/40 bg-[#ff8a00]/10 px-7 py-3 text-sm font-semibold text-[#ffb300] shadow-[0_0_15px_rgba(255,138,0,0.2)]">
             Our Services
-          </span>
+          </span> */}
 
-          <h2 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className="mb-5 inline-block rounded-full border border-[#ff8a00]/40 bg-[#ff8a00]/10 px-7 py-3 text-sm font-semibold text-[#ffb300] shadow-[0_0_15px_rgba(255,138,0,0.2)]"
+          >
+            Our Services
+          </motion.div>
+
+
+
+          {/* <h2 className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
             Futuristic Software Solutions for{" "}
             <span className="bg-linear-to-r from-[#cf7004] to-[#da9b08] bg-clip-text text-transparent">
               Modern Businesses
             </span>
-          </h2>
+          </h2> */}
 
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-gray-300 md:text-lg">
+
+            <motion.h2
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl"
+            >
+              Futuristic Software Solutions for{" "}
+              <span className="bg-gradient-to-r from-[#cf7004] to-[#da9b08] bg-clip-text text-transparent">
+                Modern Businesses
+              </span>
+            </motion.h2>
+
+
+
+          {/* <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-gray-300 md:text-lg">
             We build premium digital products, AI-powered systems, scalable
             websites, mobile apps, ERP, CRM, and automation solutions.
-          </p>
+          </p> */}
+
+          
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-gray-300 md:text-lg"
+        >
+          We build premium digital products, AI-powered systems, scalable
+          websites, mobile apps, ERP, CRM, and automation solutions.
+        </motion.p>
+
+
         </div>
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
+        {/* <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
           {services.map((service, idx) => (
             <div
               key={idx}
@@ -92,7 +135,37 @@ function Services() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
+
+
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
+  {services.map((service, idx) => (
+    <motion.div
+      key={idx}
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: idx * 0.15 }}
+      viewport={{ once: true }}
+      className="group relative overflow-hidden rounded-4xl border border-[#ff8a00]/22 bg-white/[0.04] p-9 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-[#ffb300]/70 hover:shadow-[0_0_35px_rgba(255,138,0,0.25)]"
+    >
+      <div className="absolute -right-18 -top-13 h-40 w-40 rounded-full bg-[#ff8a00]/23 blur-3xl transition duration-700 group-hover:scale-150 group-hover:bg-[#ffb300]/30" />
+
+      <h3 className="relative mb-7 text-xl font-bold text-white md:text-3xl">
+        {service.name}
+      </h3>
+
+      <p className="relative text-sm leading-7 text-gray-300">
+        {service.desc}
+      </p>
+
+      <div className="relative mt-8 flex items-center gap-2 text-sm font-semibold text-[#ffb300] transition-all duration-200 group-hover:translate-x-5">
+        Explore <span className="text-lg leading-6">→</span>
+      </div>
+    </motion.div>
+  ))}
+</div>
+
+
       </div>
     </section>
   );

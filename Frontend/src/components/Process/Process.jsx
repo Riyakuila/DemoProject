@@ -53,7 +53,7 @@ function Process() {
       >
         <div className="absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#ff9500]/0 blur-3xl transition-all duration-700 group-hover:bg-[#ff9500]/15" />
 
-        <h3 className="relative text-5xl font-black text-[#e3ddd3] transition-all duration-500 group-hover:text-white group-hover:drop-shadow-[0_0_18px_rgba(255,149,0,0.45)] md:text-6xl">
+        <h3 className="relative text-5xl font-black text-[#f99f04] transition-all duration-500 group-hover:text-white group-hover:drop-shadow-[0_0_18px_rgba(255,149,0,0.45)] md:text-6xl">
           {stat.value}
         </h3>
 
