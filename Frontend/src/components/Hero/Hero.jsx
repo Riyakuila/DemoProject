@@ -20,7 +20,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#f8debe] via-[#eae4dd] to-[#f8eadc] pt-20 text-[#24120b]">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#a69989] via-[#eae4dd] to-[#f8eadc] pt-20 text-[#24120b]">
       <div className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-orange-200/30 blur-3xl"></div>
 
       <div className="mx-auto grid min-h-[85vh] max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:px-8">
@@ -76,9 +76,12 @@ function Hero() {
 
           <motion.div
             animate={{
-              y: [0, -14, 0],
-              rotateX: [0, 3, 0],
-              rotateY: [0, -4, 0],
+              y: [0, -5, 0],
+              rotateX: [0, 2, 0],
+              rotateY: [0, -2, 0],
+              
+                
+
             }}
             transition={{
               duration: 5,
@@ -137,7 +140,7 @@ function Hero() {
             <motion.div
               animate={{ y: [0, 20, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="absolute -right-8 top-46 z-20 rounded-3xl border border-white/70 bg-white/80 px-6 py-5 shadow-2xl backdrop-blur-md"
+              className="absolute -right-8 top-30 z-20 rounded-3xl border border-white/70 bg-white/80 px-6 py-5 shadow-2xl backdrop-blur-md"
             >
               <p className="text-3xl font-black text-orange-500">98%</p>
               <p className="text-xs font-bold text-[#4a2a1d]">Efficiency</p>
