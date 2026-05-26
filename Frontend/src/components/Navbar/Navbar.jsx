@@ -1,85 +1,126 @@
-import { motion } from "framer-motion";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import logo from "../../assets/logo.png";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    "Home",
+    "Services",
+    "Solutions",
+    "Portfolio",
+    "Technologies",
+    "About",
+    "Careers",
+    "Blogs",
+    "Contact",
+  ];
+
   return (
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-black/30 backdrop-blur-xl"
+      className="fixed left-0 top-0 z-50 w-full"
     >
-      <div className="w-full px-4 sm:px-6 lg:px-10 2xl:px-0">
-        
-        <div className="mx-auto flex h-16 max-w-400 items-center justify-between sm:h-18 lg:h-28">
-
-          <div className="flex items-center shrink-0">
-            <img
-              src={logo}
-              alt="Driksha Infotech Logo"
-              className="h-12 w-auto object-contain mix-blend-lighten transition duration-300 hover:scale-105 sm:h-12 md:h-14 lg:h-18 2xl:h-20 cursor-pointer"
-            />
-          </div>
-
-          {/* Desktop Menu */}
-          <div className="hidden xl:flex items-center text-base font-medium text-gray-300 xl:gap-6 2xl:gap-10 2xl:text-[15px]">
-
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              Home
-            </a>
-
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              Services
-            </a>
-
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              Solutions
-            </a>
-
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              Portfolio
-            </a>
-
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              Technologies
-            </a>
-
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              About
-            </a>
-
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              Careers
-            </a>
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              Blogs
-            </a>
-
-            <a href="#" className="transition duration-300 hover:text-orange-400">
-              Contact
-            </a>
-
-          </div>
-
-          <div className="hidden xl:flex items-center xl:gap-3 2xl:gap-4">
-
-            <button className="rounded-xl border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-sm text-orange-400 transition duration-300 hover:bg-orange-500/20 2xl:px-5 2xl:py-2.5">
-              AI Assistant
-            </button>
-
-            <button className="rounded-xl bg-linear-to-r from-orange-500 to-amber-400 px-4 py-2 text-sm font-semibold text-black transition duration-300 hover:scale-105 2xl:px-6 2xl:py-2.5">
-              Live Demo
-            </button>
-          </div>
-
-          {/* Mobile / Tablet Menu */}
-          <div className="flex cursor-pointer items-center text-white xl:hidden">
-            <HiOutlineMenuAlt3 className="text-3xl sm:text-4xl" />
-          </div>
-
+      <div className="flex w-full items-center justify-between bg-black/90 px-5 py-3 shadow-lg backdrop-blur-md sm:px-8 lg:px-10">
+        <div className="flex items-center">
+          <img
+            src={logo}
+            alt="Driksha Infotech"
+            className="h-12 w-auto object-contain saturate-120 sm:h-10 lg:h-15"
+          />
         </div>
+
+        <div className="hidden items-center gap-5 text-base font-semibold text-[#f0e5e0] lg:flex xl:gap-9 xl:text-lg">
+          {navItems.map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="relative transition duration-300 hover:scale-105 hover:text-orange-500"
+            >
+              {item}
+            </a>
+          ))}
+        </div>
+
+        <div className="hidden gap-6 lg:flex xl:gap-4">
+          <button className="rounded-xl border border-orange-300 px-5 py-3 text-lg font-semibold text-orange-500 transition hover:bg-orange-50">
+            AI Assistant
+          </button>
+
+          <button className="rounded-xl bg-gradient-to-r from-orange-500 to-orange-400 px-5 py-3 text-sm font-semibold text-white shadow-md transition hover:shadow-orange-300">
+            Live Demo
+          </button>
+        </div>
+
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex h-11 w-11 items-center justify-center rounded-xl border border-orange-400 text-2xl text-orange-400 lg:hidden"
+        >
+          {/* {isOpen ? "×" : "☰"} */}
+
+          {isOpen ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+          )}
+
+
+
+
+        </button>
       </div>
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="bg-black/95 px-5 pb-6 pt-4 shadow-lg backdrop-blur-md lg:hidden"
+          >
+            <div className="flex flex-col gap-4 text-base font-semibold text-[#f0e5e0]">
+              {navItems.map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  onClick={() => setIsOpen(false)}
+                  className="rounded-lg px-3 py-2 transition hover:bg-orange-500/10 hover:text-orange-500"
+                >
+                  {item}
+                </a>
+              ))}
+
+              <button className="mt-3 rounded-xl border border-orange-300 px-5 py-3 text-sm font-semibold text-orange-500">
+                AI Assistant
+              </button>
+
+              <button className="rounded-xl bg-gradient-to-r from-orange-500 to-orange-400 px-5 py-3 text-sm font-semibold text-white">
+                Live Demo
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }

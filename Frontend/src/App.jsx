@@ -5,7 +5,7 @@ import Hero from "./components/Hero/Hero";
 // import OurProcess from "./components/OurProcess/OurProcess";
 // import Process from "./components/Process/Process";
 // import Testimonials from "./components/Testimonials/Testimonials";
-import FAQ from "./components/FAQ/FAQ";
+// import FAQ from "./components/FAQ/FAQ";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       {/* <Process /> */}
       {/* <OurProcess /> */}
       {/* <Testimonials /> */}
-      <FAQ />
+      {/* <FAQ /> */}
 
     </div>
   );
