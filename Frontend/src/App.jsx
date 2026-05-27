@@ -5,6 +5,7 @@ import Services from "./components/Services/Services";
 import Process from "./components/Process/Process";
 // import Testimonials from "./components/Testimonials/Testimonials";
 // import FAQ from "./components/FAQ/FAQ";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       
       {/* <Testimonials /> */}
       {/* <FAQ /> */}
-
+      <Footer />  
     </div>
   );
 }
