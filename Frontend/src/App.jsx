@@ -2,8 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
-// import OurProcess from "./components/OurProcess/OurProcess";
-// import Process from "./components/Process/Process";
+import Process from "./components/Process/Process";
 // import Testimonials from "./components/Testimonials/Testimonials";
 // import FAQ from "./components/FAQ/FAQ";
 
@@ -15,8 +14,8 @@ function App() {
       <Hero />
       <About />
       <Services />
-      {/* <Process /> */}
-      {/* <OurProcess /> */}
+      <Process />
+      
       {/* <Testimonials /> */}
       {/* <FAQ /> */}
 
