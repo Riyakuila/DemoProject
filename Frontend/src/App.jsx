@@ -9,6 +9,7 @@
 
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
+import About from "./Component/About";
 import Services from "./component/Services";
 import TechStack from "./component/TechStack";
 
@@ -19,6 +20,8 @@ function App() {
     <div className="bg-[#050505] min-h-screen text-white">
       <Navbar />
       <Hero />
+      <About />
+      {/* <Services /> */}
 
       {/* <About /> */}
       <Services />
