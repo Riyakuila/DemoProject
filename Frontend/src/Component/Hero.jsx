@@ -49,7 +49,7 @@ const FloatingCard = ({ icon: Icon, title, delay }) => (
     </motion.div>
 );
 
-export default function Hero() {
+function Hero() {
     const stats = [
         { icon: FaBriefcase, val: "50+", label: "Projects Completed" },
         { icon: FaUsers, val: "20+", label: "Happy Clients" },
@@ -216,3 +216,4 @@ export default function Hero() {
         </section>
     );
 }
+export default Hero;

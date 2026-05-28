@@ -1,16 +1,15 @@
 //import Navbar from "./components/Navbar/Navbar";
-//import Hero from "./components/Hero/Hero";
-//import About from "./components/About/About";
-//import Services from "./components/Services/Services";
-//import Process from "./components/Process/Process";
 // import Testimonials from "./components/Testimonials/Testimonials";
 // import FAQ from "./components/FAQ/FAQ";
-
 // import Team from "./components/Team/Team";
+// import About from "./components/About/About";
+// import Services from "./components/Services/Services";
+// import Process from "./components/Process/Process";
+// import Footer from "./components/Footer/Footer";
 
-//import Footer from "./components/Footer/Footer";
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
+import Services from "./component/Services";
 
 
 
@@ -20,14 +19,15 @@ function App() {
       <Navbar />
       <Hero />
 
-      <About />
+      {/* <About /> */}
       <Services />
-      <Process />
+      {/* <Process /> */}
       {/* <Team/> */}
 
-      {/* <About /> */}
-      {/* <Services /> */}
-      {/* <Process /> */}
+      {/* <About />
+      <Services />
+      <Process />
+      <Footer /> */}
      
       {/* <Testimonials /> */}
       {/* <FAQ /> */}  
