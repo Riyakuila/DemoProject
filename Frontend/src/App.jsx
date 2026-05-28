@@ -9,14 +9,14 @@
 
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
-import About from "./Component/About";
 import Services from "./Component/Services";
+import About from "./Component/About";
 import TechStack from "./Component/TechStack";
 import Projects from "./Component/Projects";
 import Process from "./Component/Process";
 import Testimonial from "./component/Testimonial";
-import Contact from "./Component/Contact";
-import Footer from "./Component/Footer";
+import Contact from "./component/Contact";
+import Footer from "./component/Footer";
 
 
 
@@ -37,7 +37,7 @@ function App() {
       {/* <About />
       <Services />
       <Process />
-      <Footer /> */}
+      // <Footer /> */}
      
       <Testimonial />
       <Contact />
