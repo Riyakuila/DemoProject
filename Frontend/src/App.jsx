@@ -12,8 +12,11 @@ import Hero from "./Component/Hero";
 import About from "./Component/About";
 import Services from "./Component/Services";
 import TechStack from "./Component/TechStack";
+import Projects from "./Component/Projects";
 import Process from "./Component/Process";
 import Testimonial from "./component/Testimonial";
+import Contact from "./Component/Contact";
+import Footer from "./Component/Footer";
 
 
 
@@ -22,12 +25,12 @@ function App() {
     <div className="bg-[#050505] min-h-screen text-white">
       <Navbar />
       <Hero />
+      <Services />
       <About />
       {/* <Services /> */}
-
-      {/* <About /> */}
-      <Services />
       <TechStack />
+      <Projects />
+
       <Process />
       {/* <Team/> */}
 
@@ -37,6 +40,9 @@ function App() {
       <Footer /> */}
      
       <Testimonial />
+      <Contact />
+      <Footer />
+
       {/* <FAQ /> */}  
     </div>
   );
