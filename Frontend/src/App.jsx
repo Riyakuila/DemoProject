@@ -10,8 +10,9 @@
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
 import About from "./Component/About";
-import Services from "./component/Services";
-import TechStack from "./component/TechStack";
+import Services from "./Component/Services";
+import TechStack from "./Component/TechStack";
+import Process from "./Component/Process";
 
 
 
@@ -26,7 +27,7 @@ function App() {
       {/* <About /> */}
       <Services />
       <TechStack />
-      {/* <Process /> */}
+      <Process />
       {/* <Team/> */}
 
       {/* <About />
