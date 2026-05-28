@@ -5,6 +5,7 @@ import Services from "./components/Services/Services";
 import Process from "./components/Process/Process";
 // import Testimonials from "./components/Testimonials/Testimonials";
 // import FAQ from "./components/FAQ/FAQ";
+// import Team from "./components/Team/Team";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Services />
       <Process />
+      {/* <Team/> */}
       
       {/* <Testimonials /> */}
       {/* <FAQ /> */}
