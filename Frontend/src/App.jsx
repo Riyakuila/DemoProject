@@ -14,6 +14,9 @@ import Services from "./Component/Services";
 import TechStack from "./Component/TechStack";
 import Process from "./Component/Process";
 import Testimonial from "./component/Testimonial";
+import Footer from "./component/Footer";
+import Contact from "./component/Contact";
+import Projects from "./Component/Projects";
 
 
 
@@ -29,14 +32,17 @@ function App() {
       <Services />
       <TechStack />
       <Process />
+      <Projects/>
       {/* <Team/> */}
 
       {/* <About />
       <Services />
       <Process />
-      <Footer /> */}
+      // <Footer /> */}
      
       <Testimonial />
+      <contact />
+      <Footer />
       {/* <FAQ /> */}  
     </div>
   );
