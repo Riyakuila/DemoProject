@@ -58,7 +58,7 @@ export default function Hero() {
     ];
 
     return (
-        <section className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-16 flex flex-col justify-center min-h-screen">
+        <section className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-16 flex flex-col justify-center min-h-screen">
             <motion.div
                 variants={staggerContainer}
                 initial="hidden"
@@ -170,45 +170,57 @@ export default function Hero() {
                 </div>
             </motion.div>
 
-            {/* Bottom Stats Banner */}
+            {/* Bottom Stats Banner - Exact Match for Screenshot 2026-05-28 105913.jpg */}
             <motion.div
                 variants={fadeInUp}
                 initial="hidden"
                 animate="visible"
-                className="w-full bg-black/40 backdrop-blur-md border border-orange-500 rounded-2xl p-6 lg:p-8 flex flex-col lg:flex-row items-center justify-between gap-8 mt-6 lg:mt-8 shadow-[0_10px_30px_rgba(0,0,0,0.5)]"
+                className="w-full bg-zinc-950/20 backdrop-blur-md border border-orange-500/30 rounded-2xl p-6 lg:p-8 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-[0_20px_50px_rgba(0,0,0,0.9)]"
             >
-                <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left border-b lg:border-b-0 lg:border-r border-orange-500/10 pb-6 lg:pb-0 lg:pr-8 w-full lg:w-auto">
+                {/* Left Side Group: Trusted By & Government Logos */}
+                <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8 text-center sm:text-left pb-6 lg:pb-0 w-full lg:w-auto shrink-0">
                     <div>
-                        <h4 className="text-orange-500 font-bold uppercase text-xs tracking-wider">Trusted By</h4>
-                        <p className="text-gray-400 text-sm font-medium mt-1 leading-tight max-w-[180px]">
+                        <h4 className="text-orange-500 text-[16px] tracking-wider">Trusted By</h4>
+                        <p className="text-zinc-200 text-sm font-light mt-1 leading-tight max-w-[160px]">
                             Businesses & Government Organizations
                         </p>
                     </div>
-                    <div className="flex space-x-3 opacity-40 mix-blend-luminosity grayscale">
-                        <div className="w-20 h-20 rounded-full border border-white/40 flex items-center justify-center text-[10px] font-bold text-white">
-                            <img src={Govt1} alt="logo" className="w-48 lg:w-64 object-contain" />
-                        </div>
-                        <div className="w-20 h-20 rounded-full border border-white/40 flex items-center justify-center text-[10px] font-bold text-white">
-                            <img src={Govt1} alt="logo" className="w-48 lg:w-64 object-contain" />
-                        </div>
-                        <div className="w-20 h-20 rounded-full border border-white/40 flex items-center justify-center text-[10px] font-bold text-white">
-                            <img src={Govt1} alt="logo" className="w-48 lg:w-64 object-contain" />
-                        </div>
+
+                    {/* Thin vertical separator between text and logos */}
+                    <div className="hidden sm:block h-10 w-[1px] bg-orange-500" />
+
+                    {/* Pure Monochrome Government Seals (Removed large white circular backgrounds) */}
+                    <div className="flex items-center space-x-6 opacity-40 grayscale brightness-200 mix-blend-screen">
+                        <img src={Govt1} alt="Government Org Seal" className="w-10 h-10 object-contain" />
+                        <img src={Govt1} alt="Government Org Seal" className="w-10 h-10 object-contain" />
+                        <img src={Govt1} alt="Government Org Seal" className="w-10 h-10 object-contain" />
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full lg:w-auto flex-1 justify-items-center">
+                {/* Center Divider Line between Logos and Stats */}
+                <div className="hidden lg:block h-12 w-[1px] bg-orange-500" />
+
+                {/* Right Side Stats Group */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full lg:w-auto flex-1 justify-items-center">
                     {stats.map((stat, i) => (
-                        <div key={i} className="flex flex-col items-center lg:items-start text-center lg:text-left group cursor-pointer">
-                            <div className="flex items-center space-x-3">
-                                <stat.icon className="text-orange-500/70 group-hover:text-orange-400 transition-colors text-lg" />
-                                <span className="text-2xl lg:text-3xl font-black text-white tracking-tight group-hover:scale-105 transition-transform duration-300">
+                        <div
+                            key={i}
+                            className={`flex items-center gap-4 px-4 py-2 w-full justify-center lg:justify-start`}
+                        >
+                            {/* Thin, subtle orange ring around the icon */}
+                            <div className="w-12 h-12 rounded-full border border-orange-500/40 flex items-center justify-center flex-shrink-0 bg-black/40 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+                                <stat.icon className="text-orange-500 text-lg" />
+                            </div>
+
+                            {/* Metric Numbers and Labels */}
+                            <div className="flex flex-col min-w-0">
+                                <span className="text-white text-2xl font-extrabold tracking-tight leading-none">
                                     {stat.val}
                                 </span>
+                                <span className="text-zinc-400 text-[10px] font-medium tracking-wide mt-1.5 whitespace-nowrap">
+                                    {stat.label}
+                                </span>
                             </div>
-                            <span className="text-gray-400 text-[11px] font-medium tracking-wide mt-1">
-                                {stat.label}
-                            </span>
                         </div>
                     ))}
                 </div>
