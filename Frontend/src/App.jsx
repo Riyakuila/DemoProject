@@ -13,6 +13,7 @@ import About from "./Component/About";
 import Services from "./Component/Services";
 import TechStack from "./Component/TechStack";
 import Process from "./Component/Process";
+import Testimonial from "./component/Testimonial";
 
 
 
@@ -35,7 +36,7 @@ function App() {
       <Process />
       <Footer /> */}
      
-      {/* <Testimonials /> */}
+      <Testimonial />
       {/* <FAQ /> */}  
     </div>
   );
