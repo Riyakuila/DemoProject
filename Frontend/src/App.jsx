@@ -10,9 +10,12 @@
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
 import About from "./Component/About";
-import Services from "./Component/Services";
+import Services from "./component/Services";
+import Project from "./component/Projects";
+import Contact from "./component/Contact";
 import TechStack from "./Component/TechStack";
 import Process from "./Component/Process";
+import Footer from "./Component/Footer";
 
 
 
@@ -21,13 +24,13 @@ function App() {
     <div className="bg-[#050505] min-h-screen text-white">
       <Navbar />
       <Hero />
-      <About />
-      {/* <Services /> */}
-
-      {/* <About /> */}
       <Services />
+      <About />
       <TechStack />
       <Process />
+      <Project />
+      <Contact />
+      <Footer />
       {/* <Team/> */}
 
       {/* <About />
