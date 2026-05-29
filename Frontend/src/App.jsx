@@ -1,50 +1,26 @@
-//import Navbar from "./components/Navbar/Navbar";
-// import Testimonials from "./components/Testimonials/Testimonials";
-// import FAQ from "./components/FAQ/FAQ";
-// import Team from "./components/Team/Team";
-// import About from "./components/About/About";
-// import Services from "./components/Services/Services";
-// import Process from "./components/Process/Process";
-// import Footer from "./components/Footer/Footer";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Component/Navbar";
-import Hero from "./Component/Hero";
-import Services from "./Component/Services";
-import About from "./Component/About";
-import TechStack from "./Component/TechStack";
-import Projects from "./Component/Projects";
-import Process from "./Component/Process";
-import Testimonial from "./component/Testimonial";
-import Contact from "./component/Contact";
-import Footer from "./component/Footer";
-
-
+import Home from "./Component/Home";
+import AboutUs from "./Component/AboutUs";
 
 function App() {
   return (
-    <div className="bg-[#050505] min-h-screen text-white">
-      <Navbar />
-      <Hero />
-      <Services />
-      <About />
-      {/* <Services /> */}
-      <TechStack />
-      <Projects />
+    <BrowserRouter>
+      <div className="bg-[#050505] min-h-screen text-white">
+        <Navbar />
 
-      <Process />
-      {/* <Team/> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs />} />
 
-      {/* <About />
-      <Services />
-      <Process />
-      // <Footer /> */}
-     
-      <Testimonial />
-      <Contact />
-      <Footer />
+          <Route path="/services" element={<Home />} />
+          <Route path="/technologies" element={<Home />} />
+          <Route path="/projects" element={<Home />} />
+          <Route path="/contact" element={<Home />} />
 
-      {/* <FAQ /> */}  
-    </div>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
