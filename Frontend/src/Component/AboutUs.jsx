@@ -141,7 +141,7 @@ function AboutUs() {
             </h2>
           </motion.div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="mt-10 mx-auto max-w-4xl grid gap-20 md:grid-cols-2">
             {missionVision.map((item, index) => (
               <motion.div
                 key={index}
@@ -153,7 +153,7 @@ function AboutUs() {
                 whileHover={{ y: -10, scale: 1.02 }}
                 className="group rounded-2xl border border-neutral-800 bg-neutral-950 p-8 transition duration-300 hover:border-orange-500 hover:bg-[#120b05] hover:shadow-[0_0_35px_rgba(249,115,22,0.16)]"
               >
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-orange-500 transition duration-300 group-hover:bg-orange-500 group-hover:text-white group-hover:shadow-[0_0_22px_rgba(249,115,22,0.55)] [&>svg]:h-7 [&>svg]:w-7">
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-orange-500 transition duration-300 group-hover:bg-orange-500 group-hover:text-white group-hover:shadow-[0_0_22px_rgba(249,115,22,0.55)] [&>svg]:h-7 [&>svg]:w-7">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-bold">{item.title}</h3>
@@ -202,7 +202,7 @@ function AboutUs() {
             <h2 className="mt-3 text-3xl font-bold">Our Core Values</h2>
           </motion.div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-8 md:grid-cols-3">
             {values.map((item, index) => (
               <motion.div
                 key={index}
@@ -212,9 +212,9 @@ function AboutUs() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.12 }}
                 whileHover={{ y: -10, scale: 1.03 }}
-                className="group rounded-2xl border border-neutral-800 bg-black p-7 text-center transition duration-300 hover:border-orange-500 hover:bg-[#120b05] hover:shadow-[0_0_35px_rgba(249,115,22,0.16)]"
+                className="group rounded-2xl border border-neutral-800 bg-black p-12 text-center transition duration-300 hover:border-orange-500 hover:bg-[#120b05] hover:shadow-[0_0_35px_rgba(249,115,22,0.16)]"
               >
-                <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-orange-500 transition duration-300 group-hover:bg-orange-500 group-hover:text-white group-hover:shadow-[0_0_22px_rgba(249,115,22,0.55)] [&>svg]:h-7 [&>svg]:w-7">
+                <div className="mx-auto mb-7 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-orange-500 transition duration-300 group-hover:bg-orange-500 group-hover:text-white group-hover:shadow-[0_0_22px_rgba(249,115,22,0.55)] [&>svg]:h-8 [&>svg]:w-8">
                   {item.icon}
                 </div>
                 <h3 className="text-lg font-bold">{item.title}</h3>
