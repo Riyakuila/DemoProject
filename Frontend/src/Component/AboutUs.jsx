@@ -168,7 +168,8 @@ function AboutUs() {
             whileInView="show"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mt-16 rounded-3xl border border-neutral-800 bg-neutral-950 p-8 md:p-10"
+            // className="mt-16 rounded-3xl border border-neutral-800 bg-neutral-950 p-8 md:p-10"
+            className="mt-16 rounded-3xl border border-orange-500/60 bg-neutral-950 p-8 md:p-10 shadow-[0_0_25px_rgba(249,115,22,0.25)]"
           >
             <p className="text-2xl font-semibold uppercase tracking-[0.05em] text-orange-500">
               Journey
