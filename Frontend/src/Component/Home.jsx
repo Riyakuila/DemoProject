@@ -19,7 +19,6 @@ function Home() {
       <Process />
       <Testimonial />
       <Contact />
-      <Footer />
     </>
   );
 }

@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 import Home from "./Component/Home";
 import AboutUs from "./Component/AboutUs";
+import Footer from "./Component/Footer";
 import OurService from "./Component/OurService";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Home />} />
 
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );

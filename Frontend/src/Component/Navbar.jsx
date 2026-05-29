@@ -13,11 +13,10 @@ function Navbar() {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/aboutus" },
-    { name: "Our Service", path: "/ourservice" },
-    // { name: "Services", path: "/services" },
-    { name: "Technologies", path: "technologies" },
-    { name: "Projects", path: "projects" },
-    { name: "Contact Us", path: "contact" },
+    { name: "Solutions", path: "/solutions" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Blogs", path: "/blogs" },
+    { name: "Careers", path: "/careers" },
   ];
 
   return (
@@ -46,31 +45,32 @@ function Navbar() {
               className="group relative"
             >
               <span
-                className={`text-[17px] font-medium transition-all duration-300 ${
-                  location.pathname === item.path
+                className={`text-[17px] font-medium transition-all duration-300 ${location.pathname === item.path
                     ? "text-[#ff8c32]"
                     : "text-white group-hover:text-[#ff8c32]"
-                }`}
+                  }`}
               >
                 {item.name}
               </span>
 
               <span
-                className={`absolute -bottom-3 left-0 h-[2px] rounded-full bg-[#ff8c32] transition-all duration-300 ${
-                  location.pathname === item.path
+                className={`absolute -bottom-3 left-0 h-[2px] rounded-full bg-[#ff8c32] transition-all duration-300 ${location.pathname === item.path
                     ? "w-full"
                     : "w-0 group-hover:w-full"
-                }`}
+                  }`}
               />
             </Link>
           ))}
         </div>
 
         {/* Phone Button */}
-        <div className="hidden lg:flex">
-          <button className="flex items-center gap-3 rounded-xl border border-[#ff8c32] px-6 py-3 text-white transition-all duration-300 hover:bg-[#ff8c32]/10 hover:shadow-[0_0_20px_rgba(255,140,50,0.25)]">
-            <FiPhone className="text-xl text-[#ff8c32]" />
-            <span className="font-medium">+91 620 382 1917</span>
+        <div className="hidden items-center gap-3 xl:flex">
+          <button className="whitespace-nowrap rounded-xl border border-orange-300 px-4 py-2.5 text-sm font-semibold text-orange-500 transition hover:bg-orange-50">
+            AI Assistant
+          </button>
+
+          <button className="whitespace-nowrap rounded-xl bg-gradient-to-r from-orange-500 to-orange-400 px-4 py-2.5 text-sm font-semibold text-white shadow-md transition hover:shadow-orange-300">
+            Live Demo
           </button>
         </div>
 
@@ -90,9 +90,8 @@ function Navbar() {
           opacity: menuOpen ? 1 : 0,
           y: menuOpen ? 0 : -20,
         }}
-        className={`overflow-hidden border-t border-[#ff8c321a] bg-[#080808] lg:hidden ${
-          menuOpen ? "block" : "hidden"
-        }`}
+        className={`overflow-hidden border-t border-[#ff8c321a] bg-[#080808] lg:hidden ${menuOpen ? "block" : "hidden"
+          }`}
       >
         <div className="flex flex-col gap-5 px-6 py-5">
           {navItems.map((item) => (
@@ -100,19 +99,21 @@ function Navbar() {
               key={item.name}
               to={item.path}
               onClick={() => setMenuOpen(false)}
-              className={`transition ${
-                location.pathname === item.path
+              className={`transition ${location.pathname === item.path
                   ? "text-[#ff8c32]"
                   : "text-white hover:text-[#ff8c32]"
-              }`}
+                }`}
             >
               {item.name}
             </Link>
           ))}
 
-          <button className="mt-3 flex items-center justify-center gap-2 rounded-xl border border-[#ff8c32] px-5 py-3 text-white">
-            <FiPhone className="text-[#ff8c32]" />
-            +91 620 382 1917
+          <button className="mt-3 rounded-xl border border-orange-300 px-5 py-3 text-sm font-semibold text-orange-500">
+            AI Assistant
+          </button>
+
+          <button className="rounded-xl bg-gradient-to-r from-orange-500 to-orange-400 px-5 py-3 text-sm font-semibold text-white">
+            Live Demo
           </button>
         </div>
       </motion.div>
