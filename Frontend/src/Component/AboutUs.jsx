@@ -249,7 +249,7 @@ function AboutUs() {
               >
                 <div className="absolute -inset-1 rounded-2xl bg-gradient-to-t from-[#F37022]/20 to-transparent opacity-40 blur-md group-hover:opacity-60 transition duration-500" />
                 <div className="relative border border-neutral-800 rounded-2xl overflow-hidden bg-[#050505]">
-                  {/* Substitute with an actual image asset if needed */}
+                  
                   <img
                     src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
                     alt="Cyberpunk city digital transformation concept"

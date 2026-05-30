@@ -15,7 +15,10 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#000000] border-t border-gray-900/60 text-gray-400 font-sans text-sm selection:bg-[#E06A28] selection:text-white relative">
+  <footer
+    id="contact"
+    className="bg-[#000000] border-t border-gray-900/60 text-gray-400 font-sans text-sm selection:bg-[#E06A28] selection:text-white relative"
+  >
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         
         {/* --- Main Sub-Columns Grid Layout --- */}
