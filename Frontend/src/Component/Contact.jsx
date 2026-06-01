@@ -50,7 +50,7 @@ export default function ContactSection() {
             — Get In Touch —
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">
-            Let’s Build Something <span className="text-[#F17A37] drop-shadow-[0_0_15px_rgba(241,122,55,0.3)]">Amazing Together!</span>
+            Let's Build Something <span className="text-[#F17A37] drop-shadow-[0_0_15px_rgba(241,122,55,0.3)]">Amazing Together!</span>
           </h1>
           <p className="max-w-2xl mx-auto text-gray-400 text-sm sm:text-base leading-relaxed">
             Have a project in mind or need expert advice? We're here to help you 
