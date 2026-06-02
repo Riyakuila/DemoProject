@@ -92,7 +92,7 @@ function AboutUs() {
   };
 
   return (
-    <section className="min-h-screen bg-[#050505] px-4 py-4 pt-28 text-white">
+    <section className="min-h-screen bg-[#090909] px-4 py-4 pt-28 text-white">
       <div className="overflow-hidden border border-neutral-800 bg-black">
         <div className="grid min-h-[640px] grid-cols-1 lg:grid-cols-[42%_58%]">
           <motion.div
@@ -313,7 +313,7 @@ function AboutUs() {
           </section>
 
 
-          <section className="py-20 px-6 max-w-7xl mx-auto border-t border-neutral-900/50">
+          <section className="py-20 px-4 max-w-7xl mx-auto border-t border-neutral-900/50">
             <motion.div
               className="text-center mb-16"
               initial="hidden"

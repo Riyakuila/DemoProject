@@ -1,6 +1,6 @@
 import Hero from "./Hero";
-import Services from "./Services";
 import About from "./About";
+import Services from "./Services";
 import TechStack from "./TechStack";
 import Projects from "./Projects";
 import Process from "./Process";
@@ -12,8 +12,8 @@ function Home() {
   return (
     <>
       <Hero />
-      <Services />
       <About />
+      <Services />
       <TechStack />
       <Projects />
       <Process />

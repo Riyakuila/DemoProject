@@ -50,9 +50,9 @@ const features = [
 
 export default function TechStack() {
   return (
-    <section className="relative overflow-hidden bg-black px-5 py-16 text-white">
+    <section className="relative overflow-hidden bg-[#101010] px-5 py-16 text-white">
       {/* Background glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#ff6a0018,transparent_42%)]" />
+      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#ff6a0018,transparent_42%)]" /> */}
 
       <div className="relative mx-auto max-w-7xl">
         {/* Header */}

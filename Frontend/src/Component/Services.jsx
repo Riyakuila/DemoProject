@@ -8,7 +8,7 @@ import {
   MdTrendingUp,
   MdCloudQueue,
   MdHeadsetMic,
-  MdVideocam,
+  MdSmartToy,
 } from "react-icons/md";
 
 const services = [
@@ -27,11 +27,11 @@ const services = [
     title: "Web & Mobile App Development",
     desc: "High-performance web and mobile applications for a seamless digital experience.",
   },
-  {
-    icon: MdVideocam,
-    title: "CCTV Surveillance Solutions",
-    desc: "Advanced CCTV systems for real-time monitoring and complete security.",
-  },
+ {
+  icon: MdSmartToy,
+  title: "AI Robotics Solutions",
+  desc: "Future-ready AI robots for farming, healthcare, automation, and smart assistance.",
+},
   {
     icon: MdSecurity,
     title: "Cyber Security",
@@ -60,7 +60,7 @@ function Services() {
       id="services"
       className="relative overflow-hidden bg-[#050505] px-5 py-20 text-white md:px-12 lg:px-20"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#ff6a001c,transparent_45%)]" />
+      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#ff6a001c,transparent_45%)]" /> */}
 
       <div className="relative mx-auto max-w-7xl">
         <div className="mb-12 text-center">

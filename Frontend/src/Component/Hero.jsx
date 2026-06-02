@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-    FaRocket, FaPlay, FaGlobe, FaCode, FaMobileAlt,
-    FaShieldAlt, FaCogs, FaChartBar, FaHeadset, FaAward, FaUsers, FaBriefcase
+    FaRocket, FaPlay,
+    FaHeadset, FaAward, FaUsers, FaBriefcase
 } from 'react-icons/fa';
 
-import Govt1 from "../assets/govt1.png";
+// import Govt1 from "../assets/govt1.png";
 import laptopImg from "../assets/hero.png";
 
 // Animation Configurations
@@ -58,17 +58,31 @@ function Hero() {
     ];
 
     return (
-        <section className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-16 flex flex-col justify-center min-h-screen">
+        <section className="relative z-10 max-w-7xl mx-auto px-4 lg:px-12 pt-8 pb-16 flex flex-col justify-center min-h-screen">
+
+                {/* <div className="pt-6 flex justify-center lg:justify-start">
+                    <div className="flex items-center space-x-2 px-4 py-1.5 rounded-full border border-orange-500/30 bg-orange-500/5">
+                        <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
+                        <span className="text-[10px] md:text-xs uppercase tracking-widest text-white">
+                            Empowering Your
+                        </span>
+                        <span className="text-[10px] md:text-xs uppercase tracking-widest text-orange-400">
+                            Digital Transformation
+                        </span>
+                    </div>
+                </div> */}
+
+
             <motion.div
                 variants={staggerContainer}
                 initial="hidden"
                 animate="visible"
-                className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center"
+                className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center pt-8"
             >
 
                 {/* Left Content Side */}
                 <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
-                    <motion.div variants={fadeInUp} className="inline-block">
+                    {/* <motion.div variants={fadeInUp} className="inline-block">
                         <div className="flex items-center space-x-2 px-4 py-1.5 rounded-full border border-orange-500/30 bg-orange-500/5 shadow-[0_0_15px_rgba(255,140,50,0.1)]">
                             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
                             <span className="text-[10px] md:text-xs text-whiteS uppercase tracking-widest">
@@ -78,9 +92,9 @@ function Hero() {
                                 Digital Transformation
                             </span>
                         </div>
-                    </motion.div>
+                    </motion.div> */}
 
-                    <motion.h1 variants={fadeInUp} className="font-semibold text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.1]">
+                    <motion.h1 variants={fadeInUp} className="font-semibold text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-[1.1]">
                         We Build <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-amber-600 drop-shadow-[0_2px_10px_rgba(255,140,50,0.2)]">
                             Smart
@@ -119,10 +133,10 @@ function Hero() {
                         />
                     </motion.div>
 
-                    <motion.p variants={fadeInUp} className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0 font-normal">
+                    {/* <motion.p variants={fadeInUp} className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0 font-normal">
                         Driksha Infotech Private Limited delivers innovative software, web, and security solutions
                         that help businesses grow, automate, and lead securely in an ultra-connected digital realm.
-                    </motion.p>
+                    </motion.p> */}
 
                     <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
                         <motion.button
@@ -154,30 +168,16 @@ function Hero() {
                 >
                     <div className="absolute w-[80%] h-[80%] border border-orange-500/10 rounded-full [transform:rotateX(75deg)] bottom-0 bg-gradient-to-t from-orange-500/10 to-transparent blur-sm pointer-events-none " />
 
-                    <div className="flex items-center justify-between w-full max-w-2xl gap-4 z-10">
-                        <div className="flex flex-col space-y-4 md:space-y-6">
-                            <FloatingCard icon={FaGlobe} title="Web Development" delay={0} />
-                            <FloatingCard icon={FaCode} title="Software Dev" delay={0.4} />
-                            <FloatingCard icon={FaMobileAlt} title="Mobile Apps" delay={0.2} />
-                        </div>
-
-                        <div className="flex flex-col space-y-4 md:space-y-6">
-                            <FloatingCard icon={FaShieldAlt} title="Cyber Security" delay={0.3} />
-                            <FloatingCard icon={FaCogs} title="CCTV Systems" delay={0.1} />
-                            <FloatingCard icon={FaChartBar} title="Digital Marketing" delay={0.5} />
-                        </div>
-                    </div>
                 </div>
             </motion.div>
 
             {/* Bottom Stats Banner - Exact Match for Screenshot 2026-05-28 105913.jpg */}
-            <motion.div
+            {/* <motion.div
                 variants={fadeInUp}
                 initial="hidden"
                 animate="visible"
                 className="w-full bg-zinc-950/20 backdrop-blur-md border border-orange-500/30 rounded-2xl p-6 lg:p-8 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-[0_20px_50px_rgba(0,0,0,0.9)]"
             >
-                {/* Left Side Group: Trusted By & Government Logos */}
                 <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8 text-center sm:text-left pb-6 lg:pb-0 w-full lg:w-auto shrink-0">
                     <div>
                         <h4 className="text-orange-500 text-[16px] tracking-wider">Trusted By</h4>
@@ -186,10 +186,8 @@ function Hero() {
                         </p>
                     </div>
 
-                    {/* Thin vertical separator between text and logos */}
                     <div className="hidden sm:block h-10 w-[1px] bg-orange-500" />
 
-                    {/* Pure Monochrome Government Seals (Removed large white circular backgrounds) */}
                     <div className="flex items-center space-x-6 opacity-40 grayscale brightness-200 mix-blend-screen">
                         <img src={Govt1} alt="Government Org Seal" className="w-10 h-10 object-contain" />
                         <img src={Govt1} alt="Government Org Seal" className="w-10 h-10 object-contain" />
@@ -197,22 +195,22 @@ function Hero() {
                     </div>
                 </div>
 
-                {/* Center Divider Line between Logos and Stats */}
+                
                 <div className="hidden lg:block h-12 w-[1px] bg-orange-500" />
 
-                {/* Right Side Stats Group */}
+                
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full lg:w-auto flex-1 justify-items-center">
                     {stats.map((stat, i) => (
                         <div
                             key={i}
                             className={`flex items-center gap-4 px-4 py-2 w-full justify-center lg:justify-start`}
                         >
-                            {/* Thin, subtle orange ring around the icon */}
+                            
                             <div className="w-12 h-12 rounded-full border border-orange-500/40 flex items-center justify-center flex-shrink-0 bg-black/40 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
                                 <stat.icon className="text-orange-500 text-lg" />
                             </div>
 
-                            {/* Metric Numbers and Labels */}
+                            
                             <div className="flex flex-col min-w-0">
                                 <span className="text-white text-2xl font-extrabold tracking-tight leading-none">
                                     {stat.val}
@@ -224,7 +222,7 @@ function Hero() {
                         </div>
                     ))}
                 </div>
-            </motion.div>
+            </motion.div> */}
         </section>
     );
 }

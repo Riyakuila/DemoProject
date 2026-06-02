@@ -24,7 +24,7 @@ const iconBox =
   "flex h-14 w-14 items-center justify-center rounded-2xl border border-orange-500/60 bg-orange-500/10 text-orange-400 shadow-[0_0_18px_rgba(249,115,22,0.35)] transition-all duration-300 group-hover:border-white group-hover:bg-white group-hover:text-black group-hover:shadow-[0_0_35px_rgba(255,255,255,0.8)]";
 
 const inputClass =
-  "w-full min-w-0 rounded-2xl border bg-white/[0.04] px-4 py-3 text-white placeholder:text-neutral-600 outline-none transition duration-300 hover:border-orange-500/60 hover:bg-white/[0.06] focus:border-orange-500 focus:bg-white/[0.07] focus:ring-2";
+  "w-full min-w-0 rounded-xl border bg-white/[0.04] px-4 py-3 text-white placeholder:text-neutral-600 outline-none transition duration-300 hover:border-orange-500/60 hover:bg-white/[0.06] focus:border-orange-500 focus:bg-white/[0.07] focus:ring-2";
 
 const initialForm = {
   fullName: "",
@@ -236,7 +236,7 @@ function Careers() {
   };
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black px-5 pb-24 pt-32 text-white md:px-12 lg:px-20">
+    <section className="relative min-h-screen overflow-hidden bg-black px-4 pb-24 pt-32 text-white md:px-12 lg:px-20">
       <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-orange-500/15 blur-[120px]" />
       <div className="absolute bottom-20 right-0 h-80 w-80 rounded-full bg-orange-600/15 blur-[130px]" />
 
@@ -263,14 +263,14 @@ function Careers() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <button
               onClick={scrollToRoles}
-              className="rounded-full bg-orange-500 px-7 py-3 text-sm font-bold text-black shadow-[0_0_30px_rgba(249,115,22,0.55)] transition hover:bg-white"
+              className="rounded-full bg-orange-500 px-6 py-3 text-sm font-bold text-black shadow-[0_0_30px_rgba(249,115,22,0.55)] transition hover:bg-white"
             >
               View Open Roles
             </button>
 
             <button
               onClick={() => openForm()}
-              className="rounded-full border border-orange-500/60 px-7 py-3 text-sm font-bold text-orange-300 transition hover:bg-orange-500 hover:text-white"
+              className="rounded-full border border-orange-500/60 px-6 py-3 text-sm font-bold text-orange-300 transition hover:bg-orange-500 hover:text-white"
             >
               Apply Now
             </button>
@@ -285,7 +285,7 @@ function Careers() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
               viewport={{ once: true }}
-              className="group h-full rounded-3xl border border-white/10 bg-white/[0.035] p-6 transition-all duration-300 hover:border-orange-500/70 hover:bg-orange-500/10 hover:shadow-[0_0_35px_rgba(249,115,22,0.2)]"
+              className="group h-full rounded-2xl border border-white/10 bg-white/[0.035] p-6 transition-all duration-300 hover:border-orange-500/70 hover:bg-orange-500/10 hover:shadow-[0_0_35px_rgba(249,115,22,0.2)]"
             >
               <div className={iconBox}>
                 <Icon size={28} />
@@ -322,8 +322,8 @@ function Careers() {
                   viewport={{ once: true }}
                   className="group h-[285px] [perspective:1000px]"
                 >
-                  <div className="relative h-full rounded-3xl transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <div className="absolute inset-0 rounded-3xl border border-white/10 bg-white/[0.035] p-6 [backface-visibility:hidden]">
+                  <div className="relative h-full rounded-2xl transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    <div className="absolute inset-0 rounded-2xl border border-white/10 bg-white/[0.035] p-6 [backface-visibility:hidden]">
                       <div className={iconBox}>
                         <Icon size={28} />
                       </div>
@@ -349,7 +349,7 @@ function Careers() {
                       </button>
                     </div>
 
-                    <div className="absolute inset-0 rounded-3xl border border-orange-500/50 bg-[#090909] p-6 shadow-[0_0_40px_rgba(249,115,22,0.22)] [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <div className="absolute inset-0 rounded-2xl border border-orange-500/50 bg-[#090909] p-6 shadow-[0_0_40px_rgba(249,115,22,0.22)] [backface-visibility:hidden] [transform:rotateY(180deg)]">
                       <div className={iconBox}>
                         <Icon size={28} />
                       </div>
@@ -373,7 +373,7 @@ function Careers() {
           </div>
         </div>
 
-        <div className="relative mt-20 overflow-hidden rounded-[2rem] border border-orange-500/40 bg-black p-6 shadow-[0_0_35px_rgba(249,115,22,0.18)] md:p-10">
+        <div className="relative mt-20 overflow-hidden rounded-[1rem] border border-orange-500/40 bg-black p-6 shadow-[0_0_35px_rgba(249,115,22,0.18)] md:p-10">
           <div className="absolute -left-24 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-orange-500/10 blur-[100px]" />
           <div className="absolute -right-20 top-10 h-60 w-60 rounded-full bg-white/5 blur-[100px]" />
 
@@ -417,7 +417,7 @@ function Careers() {
                   key={item}
                   whileHover={{ x: 12, scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 260, damping: 18 }}
-                  className="group flex items-center gap-5 rounded-3xl border border-orange-300/20 bg-white/[0.03] p-5 shadow-[0_0_18px_rgba(249,115,22,0.08)] transition hover:bg-white/[0.10]"
+                  className="group flex items-center gap-5 rounded-2xl border border-orange-300/20 bg-white/[0.03] p-5 shadow-[0_0_18px_rgba(249,115,22,0.08)] transition hover:bg-white/[0.10]"
                 >
                   <div className={iconBox}>
                     <CheckCircle2 size={23} />
@@ -444,7 +444,7 @@ function Careers() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.94, y: 25 }}
               transition={{ duration: 0.3 }}
-              className="relative w-full max-w-3xl overflow-hidden rounded-[2rem] border border-orange-500/30 bg-[#050505] shadow-[0_0_55px_rgba(249,115,22,0.25)]"
+              className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-orange-500/30 bg-[#050505] shadow-[0_0_55px_rgba(249,115,22,0.25)]"
             >
               <button
                 onClick={() => setShowForm(false)}
@@ -600,7 +600,7 @@ function Careers() {
                             setIsDragging(false);
                           }}
                           onDrop={handleDrop}
-                          className={`relative min-w-0 cursor-pointer rounded-2xl border-2 border-dashed transition duration-300 ${
+                          className={`relative min-w-0 cursor-pointer rounded-xl border-2 border-dashed transition duration-300 ${
                             isDragging
                               ? "border-orange-500 bg-orange-500/10"
                               : errors.resume
@@ -664,7 +664,7 @@ function Careers() {
                         type="submit"
                         whileHover={{ scale: 1.015 }}
                         whileTap={{ scale: 0.98 }}
-                        className="group relative mt-5 w-full overflow-hidden rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-3.5 font-bold text-white shadow-[0_0_28px_rgba(249,115,22,0.28)] transition hover:shadow-[0_0_40px_rgba(249,115,22,0.45)]"
+                        className="group relative mt-5 w-full overflow-hidden rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-3.5 font-bold text-white shadow-[0_0_28px_rgba(249,115,22,0.28)] transition hover:shadow-[0_0_40px_rgba(249,115,22,0.45)]"
                       >
                         <span className="relative z-10 flex items-center justify-center gap-2">
                           Submit Application
@@ -730,7 +730,7 @@ function PhoneInputBox({
         <select
           value={phoneCode}
           onChange={(e) => onCodeChange(e.target.value)}
-          className="w-full min-w-0 rounded-2xl border border-white/10 bg-white/[0.04] px-3 py-3 text-sm text-white outline-none transition duration-300 hover:border-orange-500/60 hover:bg-white/[0.06] focus:border-orange-500 focus:bg-white/[0.07] focus:ring-2 focus:ring-orange-500/20"
+          className="w-full min-w-0 rounded-xl border border-white/10 bg-white/[0.04] px-3 py-3 text-sm text-white outline-none transition duration-300 hover:border-orange-500/60 hover:bg-white/[0.06] focus:border-orange-500 focus:bg-white/[0.07] focus:ring-2 focus:ring-orange-500/20"
         >
           {countryOptions.map((country) => (
             <option

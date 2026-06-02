@@ -109,7 +109,8 @@ function OurService() {
                 />
               </motion.div>
 
-              <div className="relative z-10 mt-7 text-center md:mt-0 md:text-left">
+              {/* <div className="relative z-10 mt-7 text-center md:mt-0 md:text-left"> */}
+              <div className="relative z-10 mt-7 flex h-full flex-col text-center md:mt-0 md:text-left">
                 <h3 className="text-2xl font-black text-white md:text-3xl">
                   {service.name}
                 </h3>

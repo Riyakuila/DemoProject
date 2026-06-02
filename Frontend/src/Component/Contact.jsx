@@ -27,13 +27,11 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#000000] text-white font-sans overflow-hidden px-4 py-16 sm:px-6 lg:px-8 selection:bg-[#E06A28] selection:text-white">
+          <div
+        id="contact"
+        className="relative min-h-screen bg-[#040404] text-white font-sans overflow-hidden px-4 py-16 sm:px-6 lg:px-8"
+      > 
       
-      {/* --- Ambient Glowing Textures --- */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-[#E06A28]/10 to-transparent blur-[120px] pointer-events-none" />
-      <div className="absolute top-12 right-0 w-[400px] h-[400px] bg-gradient-to-bl from-[#F17A37]/10 to-transparent blur-[100px] pointer-events-none" />
-      
-      {/* Decorative World Map Dot Overlay */}
       <div className="absolute top-10 left-10 opacity-10 pointer-events-none hidden lg:block">
         <svg width="240" height="140" viewBox="0 0 240 140" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="20" cy="20" r="2" fill="#E06A28" /><circle cx="40" cy="20" r="2" fill="#E06A28" /><circle cx="60" cy="40" r="2" fill="#E06A28" />
@@ -168,7 +166,17 @@ export default function ContactSection() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="relative">
                   <FaUser size={14} className="absolute left-3 top-4 text-gray-500" />
-                  <input type="text" placeholder="Your Name" className="w-full bg-black/40 border border-gray-900 focus:border-[#E06A28]/60 focus:outline-none rounded-lg pl-10 pr-4 py-3 text-sm text-gray-200 transition-colors placeholder-gray-600" />
+                  
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    onInput={(e) => {
+                      e.target.value = e.target.value.replace(/[^a-zA-Z\s]/g, "");
+                    }}
+                    className="w-full bg-black/40 border border-gray-900 focus:border-[#E06A28]/60 focus:outline-none rounded-lg pl-10 pr-4 py-3 text-sm text-gray-200 transition-colors placeholder-gray-600"
+                  />
+
+
                 </div>
                 <div className="relative">
                   <FaEnvelope size={14} className="absolute left-3 top-4 text-gray-500" />
@@ -178,7 +186,20 @@ export default function ContactSection() {
 
               <div className="relative">
                 <FaPhone size={14} className="absolute left-3 top-4 text-gray-500" />
-                <input type="text" placeholder="Phone Number" className="w-full bg-black/40 border border-gray-900 focus:border-[#E06A28]/60 focus:outline-none rounded-lg pl-10 pr-4 py-3 text-sm text-gray-200 transition-colors placeholder-gray-600" />
+                
+
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  maxLength={10}
+                  onInput={(e) => {
+                    e.target.value = e.target.value.replace(/\D/g, "").slice(0, 10);
+                  }}
+                  className="w-full bg-black/40 border border-gray-900 focus:border-[#E06A28]/60 focus:outline-none rounded-lg pl-10 pr-4 py-3 text-sm text-gray-200 transition-colors placeholder-gray-600"
+                />    
+
+
+
               </div>
 
               <div className="relative">
@@ -301,5 +322,7 @@ export default function ContactSection() {
 
       </div>
     </div>
+  
   );
+  
 }

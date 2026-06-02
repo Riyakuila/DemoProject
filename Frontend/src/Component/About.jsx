@@ -63,7 +63,7 @@ export default function About() {
     return (
         <section
             id="about"
-            className="relative min-h-screen w-full bg-black py-24 px-6 md:px-12 lg:px-20 overflow-hidden flex items-center justify-center z-10"
+            className="relative min-h-screen w-full bg-black py-24 px-4 md:px-12 lg:px-20 overflow-hidden flex items-center justify-center z-10"
             style={{ backgroundImage: `url(${aboutBgImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             {/* Dynamic Futuristic Dark Ambient Overlays & Laser Glow Accents */}

@@ -85,11 +85,11 @@ function Testimonials() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-black px-6 py-20 text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#1a0b02,transparent_45%)]" />
+    <section className="relative overflow-hidden bg-[#0b0b0b] px-6 py-20 text-white">
+      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#1a0b02,transparent_45%)]" />
       <div className="absolute right-10 top-20 text-[180px] font-black leading-none text-orange-500/10">
         “
-      </div>
+      </div> */}
 
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="text-center">

@@ -76,7 +76,7 @@ export default function OurProjects() {
       mockup: (
         <div className="w-full h-full bg-zinc-950 p-2 grid grid-cols-3 grid-rows-2 gap-1 select-none">
           {[...Array(6)].map((_, i) => (
-            <div key={i} className="bg-zinc-900 border border-zinc-800 rounded relative flex items-center justify-center text-zinc-700 overflow-hidden">
+            <div key={i} className="bg-zinc-700 border border-zinc-800 rounded relative flex items-center justify-center text-zinc-700 overflow-hidden">
               <div className="absolute top-1 left-1 bg-red-600 w-1.5 h-1.5 rounded-full animate-pulse" />
               <span className="text-[6px] absolute bottom-1 left-1 text-zinc-400 font-mono">CAM_0{i+1}</span>
               <div className="w-full h-full opacity-20 bg-[radial-gradient(#333_1px,transparent_1px)] [background-size:4px_4px]" />
@@ -238,7 +238,7 @@ export default function OurProjects() {
     : projects.filter(project => project.type === activeTab);
 
   return (
-    <div className="bg-black text-white min-h-screen py-16 px-4 md:px-8 relative overflow-hidden font-sans">
+    <div className="bg-[#070707] text-white min-h-screen py-16 px-4 md:px-8 relative overflow-hidden font-sans">
       
       {/* Background Graphic Effects to match the orange cyber/globe theme */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-orange-600/10 via-transparent to-transparent pointer-events-none" />

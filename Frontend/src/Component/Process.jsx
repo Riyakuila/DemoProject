@@ -74,10 +74,9 @@ function Process() {
   return (
     <section
       id="process"
-      className="relative overflow-hidden bg-[#030303] px-4 py-16 text-white md:px-10 lg:px-6"
+      className="relative overflow-hidden bg-[#000000] px-4 py-16 text-white md:px-10 lg:px-6"
     >
-      <div className="absolute left-0 top-20 h-80 w-80 rounded-full bg-orange-500/10 blur-[120px]" />
-      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-orange-500/10 blur-[120px]" />
+
 
       <div className="relative z-10 mx-auto mb-20 max-w-5xl text-center">
         <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-orange-500">
