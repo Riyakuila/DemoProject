@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import {
   MdDesignServices,
@@ -64,12 +63,18 @@ function Services() {
 
       <div className="relative mx-auto max-w-7xl">
         <div className="mb-12 text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.35em] text-orange-500">
+
+          <p className="text-sm font-bold uppercase tracking-[0.35em] bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
             What We Do
           </p>
+
           <h2 className="mt-3 text-4xl font-black italic md:text-7xl">
-            OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">SERVICES</span>
+            OUR{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500">
+              SERVICES
+            </span>
           </h2>
+
           <p className="mx-auto mt-4 max-w-2xl text-sm text-gray-300 md:text-base">
             We provide end-to-end digital solutions to help your business grow,
             innovate and stay ahead in the digital world.
@@ -88,13 +93,13 @@ function Services() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: index * 0.06 }}
                 whileHover={{ y: -10, scale: 1.02 }}
-                className="group relative flex h-full flex-col rounded-xl border border-orange-500/40 bg-black/70 p-6 text-center shadow-[0_0_18px_rgba(255,100,0,0.18)] transition-all duration-300 hover:border-orange-400 hover:shadow-[0_0_35px_rgba(255,100,0,0.45)]"
+                className="group relative flex h-full flex-col rounded-xl border border-yellow-500/35 bg-black/70 p-6 text-center shadow-[0_0_18px_rgba(251,191,36,0.18)] transition-all duration-300 hover:border-yellow-500 hover:shadow-[0_0_35px_rgba(251,191,36,0.38)]"
               >
-                <span className="absolute left-3 top-3 rounded bg-orange-500 px-2 py-1 text-xs font-bold">
+                <span className="absolute left-3 top-3 rounded bg-gradient-to-r from-orange-400 to-yellow-500 px-2 py-1 text-xs font-bold text-black">
                   {String(index + 1).padStart(2, "0")}
                 </span>
 
-                <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full border border-orange-500 bg-orange-500/10 text-orange-400 shadow-[0_0_25px_rgba(255,100,0,0.45)] transition-all duration-300 group-hover:scale-110 group-hover:bg-orange-500 group-hover:text-white">
+                <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full border border-yellow-500 bg-yellow-500/10 text-yellow-500 shadow-[0_0_25px_rgba(251,191,36,0.35)] transition-all duration-300 group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-yellow-500 group-hover:text-black">
                   <Icon size={42} />
                 </div>
 
@@ -106,9 +111,9 @@ function Services() {
                   {service.desc}
                 </p>
 
-                <div className= "mt-auto">
+                <div className="mt-auto">
 
-                  <button className="mt-5 text-sm font-semibold text-orange-400 transition group-hover:text-orange-300">
+                                    <button className="mt-5 text-sm font-semibold text-yellow-500 transition group-hover:text-yellow-400">
                     Learn More →
                   </button>
 
@@ -120,16 +125,16 @@ function Services() {
 
         <motion.div
           whileHover={{ scale: 1.03 }}
-          className="mx-auto mt-8 flex max-w-lg items-center justify-between rounded-xl border border-orange-500/50 bg-black px-5 py-3 shadow-[0_0_25px_rgba(255,100,0,0.25)]"
+          className="mx-auto mt-8 flex max-w-lg items-center justify-between rounded-xl border border-yellow-500/40 bg-black px-5 py-3 shadow-[0_0_25px_rgba(251,191,36,0.22)]"
         >
           <p className="text-sm">
             Have a Project in Mind?{" "}
-            <span className="font-bold text-orange-400">
+            <span className="font-bold bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
               Let’s Build Something Amazing Together!
             </span>
           </p>
 
-          <button className="ml-4 rounded-full bg-orange-500 px-3 py-2 text-white">
+          <button className="ml-4 rounded-full bg-gradient-to-r from-orange-400 to-yellow-500 px-3 py-2 text-black shadow-[0_0_15px_rgba(251,191,36,0.35)]">
             →
           </button>
         </motion.div>

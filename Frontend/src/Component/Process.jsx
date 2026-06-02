@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import {
@@ -77,32 +76,38 @@ function Process() {
       className="relative overflow-hidden bg-[#000000] px-4 py-16 text-white md:px-10 lg:px-6"
     >
 
-
       <div className="relative z-10 mx-auto mb-20 max-w-5xl text-center">
-        <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-orange-500">
+
+        <p className="mb-4 text-sm font-bold uppercase tracking-[0.3em] bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
           Our Work Process
         </p>
 
         <h2 className="text-4xl font-black leading-tight md:text-6xl lg:text-6xl">
           Our Process,{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Your Success</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500">
+            Your Success
+          </span>
         </h2>
 
         <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-zinc-300 md:text-lg">
           We follow a clear and agile process to transform your ideas into
-          powerful <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">digital solutions.</span>
+          powerful{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500">
+            digital solutions.
+          </span>
         </p>
       </div>
 
       <div className="relative z-10 grid items-stretch gap-14 md:grid-cols-2 xl:grid-cols-6">
         {processSteps.map((step, index) => (
           <div key={step.number} className="relative flex">
+
             <motion.div
               whileHover={{ y: -10, scale: 1.02 }}
               transition={{ duration: 0.3 }}
-              className="relative flex h-[280px] w-full flex-col items-center rounded-[20px] border border-orange-500/45 bg-[#070707]/95 px-5 pb-6 pt-12 text-center shadow-[0_0_30px_rgba(255,115,0,0.12)]"
+              className="relative flex h-[280px] w-full flex-col items-center rounded-[20px] border border-yellow-500/40 bg-[#070707]/95 px-5 pb-6 pt-12 text-center shadow-[0_0_30px_rgba(251,191,36,0.12)]"
             >
-              <div className="absolute -top-9 flex h-12 w-12 items-center justify-center rounded-full border-2 border-orange-500 bg-[#050505] text-xl font-bold shadow-[0_0_25px_rgba(255,115,0,0.7)]">
+              <div className="absolute -top-9 flex h-12 w-12 items-center justify-center rounded-full border-2 border-yellow-500 bg-[#050505] text-xl font-bold shadow-[0_0_25px_rgba(251,191,36,0.55)]">
                 {step.number}
               </div>
 
@@ -115,29 +120,30 @@ function Process() {
                   repeat: Infinity,
                   delay: index * 0.2,
                 }}
-                className="-mt-3 h-20 w-20 object-contain drop-shadow-[0_0_30px_rgba(255,115,0,0.35)]"
+                className="-mt-3 h-20 w-20 object-contain drop-shadow-[0_0_30px_rgba(251,191,36,0.35)]"
               />
 
               <div className="mt-2 flex flex-col items-center">
+
                 <h3 className="text-2xl font-black leading-none">
                   {step.title}
                 </h3>
 
-                <div className="my-3 h-[3px] w-16 rounded-full bg-orange-400" />
+                <div className="my-3 h-[3px] w-16 rounded-full bg-gradient-to-r from-orange-400 to-yellow-500" />
 
                 <p className="max-w-[210px] text-[13px] leading-[1.8] text-zinc-300">
                   {step.desc}
                 </p>
               </div>
 
-              <div className="absolute -bottom-3 h-5 w-5 rounded-full border-2 border-white bg-orange-500 shadow-[0_0_20px_rgba(255,115,0,1)]" />
+              <div className="absolute -bottom-3 h-5 w-5 rounded-full border-2 border-white bg-gradient-to-r from-orange-400 to-yellow-500 shadow-[0_0_20px_rgba(251,191,36,0.9)]" />
             </motion.div>
 
             {index !== processSteps.length - 1 && (
               <motion.div
                 animate={{ x: [0, 10, 0], opacity: [0.55, 1, 0.55] }}
                 transition={{ duration: 1.2, repeat: Infinity }}
-                className="absolute -right-9 top-1/2 z-20 hidden -translate-y-1/2 text-5xl font-bold text-orange-500 drop-shadow-[0_0_14px_rgba(255,115,0,0.9)] xl:block"
+                className="absolute -right-9 top-1/2 z-20 hidden -translate-y-1/2 text-5xl font-bold text-yellow-500 drop-shadow-[0_0_14px_rgba(251,191,36,0.75)] xl:block"
               >
                 →
               </motion.div>
@@ -146,27 +152,30 @@ function Process() {
         ))}
       </div>
 
-      <motion.div
+            <motion.div
         initial={{ opacity: 0, y: 35 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="relative z-10 mt-16 rounded-[28px] border border-orange-500/40 bg-[#070707] px-8 py-5 shadow-[0_0_35px_rgba(255,115,0,0.12)] md:px-9 md:py-9"
+        className="relative z-10 mt-16 rounded-[28px] border border-yellow-500/35 bg-[#070707] px-8 py-5 shadow-[0_0_35px_rgba(251,191,36,0.12)] md:px-9 md:py-9"
       >
         <div className="grid gap-10 lg:grid-cols-[1.8fr_3fr]">
+
           <div className="flex gap-9">
+
             <motion.img
               src="/Images/Deliver.png"
               alt="Deliver"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity }}
-              className="hidden h-44 w-44 object-contain drop-shadow-[0_0_30px_rgba(255,115,0,0.35)] md:block"
+              className="hidden h-44 w-44 object-contain drop-shadow-[0_0_30px_rgba(251,191,36,0.35)] md:block"
             />
 
             <div>
               <h3 className="text-3xl font-black leading-tight md:text-3xl">
                 A Process Built on <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">
+
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500">
                   Trust & Transparency
                 </span>
               </h3>
@@ -184,13 +193,15 @@ function Process() {
                 key={item.title}
                 whileHover={{ y: -6 }}
                 transition={{ duration: 0.3 }}
-                className="text-center lg:border-l lg:border-orange-500/20 lg:px-6"
+                className="text-center lg:border-l lg:border-yellow-500/20 lg:px-6"
               >
-                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/10 text-4xl text-orange-500">
+                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-500/10 text-4xl text-yellow-500">
                   {item.icon}
                 </div>
 
-                <h4 className="text-lg font-bold leading-6">{item.title}</h4>
+                <h4 className="text-lg font-bold leading-6">
+                  {item.title}
+                </h4>
 
                 <p className="mt-4 text-sm leading-6 text-zinc-400">
                   {item.desc}
@@ -198,6 +209,7 @@ function Process() {
               </motion.div>
             ))}
           </div>
+
         </div>
       </motion.div>
     </section>

@@ -17,7 +17,7 @@ export default function Footer() {
   return (
   <footer
     id="contact"
-    className="bg-[#000000] border-t border-gray-900/60 text-gray-400 font-sans text-sm selection:bg-[#E06A28] selection:text-white relative"
+    className="bg-[#000000] border-t border-gray-900/60 text-gray-400 font-sans text-sm selection:bg-yellow-500 selection:text-black relative"
   >
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         
@@ -33,26 +33,35 @@ export default function Footer() {
             
             {/* Minimal Sub-line divider layout element from source */}
             <div className="w-full pt-1 flex items-center space-x-2">
-              <div className="h-[1px] bg-[#E06A28]/40 w-6" />
+              <div className="h-[1px] bg-yellow-500/40 w-6" />
+
               <span className="text-[10px] tracking-[0.25em] font-medium text-gray-500 uppercase whitespace-nowrap">
                 Private Limited
               </span>
-              <div className="h-[1px] bg-[#E06A28]/40 w-6" />
+
+              <div className="h-[1px] bg-yellow-500/40 w-6" />
             </div>
           </div>
 
           {/* Quick Links Column */}
           <div className="lg:col-span-2 lg:pl-4">
-            <h4 className="text-white font-bold text-base mb-4 tracking-wide">Quick Links</h4>
+            <h4 className="text-white font-bold text-base mb-4 tracking-wide">
+              Quick Links
+            </h4>
+
             <ul className="space-y-2.5 text-xs">
               {['Home', 'About Us', 'Services', 'Projects', 'Contact Us'].map((link) => (
                 <li key={link}>
                   <motion.a 
-                    whileHover={{ x: 4, color: '#F17A37' }}
+                    whileHover={{ x: 4, color: '#facc15' }}
                     href={`#${link.toLowerCase().replace(' ', '-')}`} 
                     className="flex items-center space-x-2 hover:text-white transition-colors"
                   >
-                    <FaChevronRight size={8} className="text-[#E06A28]" />
+                    <FaChevronRight
+                      size={8}
+                      className="text-yellow-500"
+                    />
+
                     <span>{link}</span>
                   </motion.a>
                 </li>
@@ -62,7 +71,10 @@ export default function Footer() {
 
           {/* Our Services Column */}
           <div className="lg:col-span-2">
-            <h4 className="text-white font-bold text-base mb-4 tracking-wide">Our Services</h4>
+            <h4 className="text-white font-bold text-base mb-4 tracking-wide">
+              Our Services
+            </h4>
+
             <ul className="space-y-2.5 text-xs">
               {[
                 'Website Development', 
@@ -73,11 +85,15 @@ export default function Footer() {
               ].map((service) => (
                 <li key={service}>
                   <motion.a 
-                    whileHover={{ x: 4, color: '#F17A37' }}
+                    whileHover={{ x: 4, color: '#facc15' }}
                     href="#" 
                     className="flex items-center space-x-2 hover:text-white transition-colors"
                   >
-                    <FaChevronRight size={8} className="text-[#E06A28]" />
+                    <FaChevronRight
+                      size={8}
+                      className="text-yellow-500"
+                    />
+
                     <span>{service}</span>
                   </motion.a>
                 </li>
@@ -87,61 +103,97 @@ export default function Footer() {
 
           {/* Useful Links Column */}
           <div className="lg:col-span-2 lg:border-r lg:border-gray-900/60 lg:pr-4 h-full">
-            <h4 className="text-white font-bold text-base mb-4 tracking-wide">Useful Links</h4>
+            <h4 className="text-white font-bold text-base mb-4 tracking-wide">
+              Useful Links
+            </h4>
+
             <ul className="space-y-2.5 text-xs">
               {['Privacy Policy', 'Terms & Conditions', 'Refund Policy', 'Careers', 'Sitemap'].map((link) => (
                 <li key={link}>
                   <motion.a 
-                    whileHover={{ x: 4, color: '#F17A37' }}
+                    whileHover={{ x: 4, color: '#facc15' }}
                     href="#" 
                     className="flex items-center space-x-2 hover:text-white transition-colors"
                   >
-                    <FaChevronRight size={8} className="text-[#E06A28]" />
+                    <FaChevronRight
+                      size={8}
+                      className="text-yellow-500"
+                    />
+
                     <span>{link}</span>
                   </motion.a>
                 </li>
               ))}
             </ul>
           </div>
-
-          {/* Contact Info Column */}
+                    {/* Contact Info Column */}
           <div className="lg:col-span-3 lg:pl-4 space-y-4 relative">
-            <h4 className="text-white font-bold text-base mb-4 tracking-wide">Contact Info</h4>
+            <h4 className="text-white font-bold text-base mb-4 tracking-wide">
+              Contact Info
+            </h4>
+
             <div className="space-y-3 text-xs">
               
               {/* Phone */}
               <div className="flex items-center space-x-3">
-                <FaPhone size={12} className="text-[#E06A28] flex-shrink-0" />
-                <span className="hover:text-white transition-colors cursor-pointer">+91 620 382 1917</span>
+                <FaPhone
+                  size={12}
+                  className="text-yellow-500 flex-shrink-0"
+                />
+
+                <span className="hover:text-white transition-colors cursor-pointer">
+                  +91 620 382 1917
+                </span>
               </div>
 
               {/* Email */}
               <div className="flex items-center space-x-3">
-                <FaEnvelope size={12} className="text-[#E06A28] flex-shrink-0" />
-                <span className="hover:text-white transition-colors cursor-pointer">info@drikshainfotech.com</span>
+                <FaEnvelope
+                  size={12}
+                  className="text-yellow-500 flex-shrink-0"
+                />
+
+                <span className="hover:text-white transition-colors cursor-pointer">
+                  info@drikshainfotech.com
+                </span>
               </div>
 
               {/* Web */}
               <div className="flex items-center space-x-3">
-                <FaGlobe size={12} className="text-[#E06A28] flex-shrink-0" />
-                <span className="text-[#F17A37] hover:underline cursor-pointer">www.drikshainfotech.com</span>
+                <FaGlobe
+                  size={12}
+                  className="text-yellow-500 flex-shrink-0"
+                />
+
+                <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent hover:underline cursor-pointer">
+                  www.drikshainfotech.com
+                </span>
               </div>
 
               {/* Address */}
               <div className="flex items-start space-x-3">
-                <FaMapPin size={12} className="text-[#E06A28] mt-0.5 flex-shrink-0" />
-                <span className="leading-relaxed">Jehanabad, Bihar, India - 804408</span>
-              </div>
+                <FaMapPin
+                  size={12}
+                  className="text-yellow-500 mt-0.5 flex-shrink-0"
+                />
 
+                <span className="leading-relaxed">
+                  Jehanabad, Bihar, India - 804408
+                </span>
+              </div>
             </div>
 
             {/* Floating 'Back to Top' Action Trigger */}
             <div className="absolute right-0 bottom-0 md:relative md:right-auto md:bottom-auto md:pt-4 flex justify-end w-full">
               <motion.button
                 onClick={scrollToTop}
-                whileHover={{ scale: 1.1, backgroundColor: '#E06A28', borderColor: '#F17A37' }}
+                whileHover={{
+                  scale: 1.1,
+                  backgroundColor: '#facc15',
+                  borderColor: '#facc15'
+                }}
                 whileTap={{ scale: 0.9 }}
-                className="w-9 h-9 border border-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition-colors shadow-lg shadow-black"
+                className="w-9 h-9 border border-yellow-500/25 rounded-full flex items-center justify-center text-gray-400 hover:text-black transition-colors shadow-lg shadow-black"
                 title="Back to Top"
               >
                 <FaArrowUp size={12} />
@@ -154,7 +206,11 @@ export default function Footer() {
         {/* --- Lower Copyright Legal Bar --- */}
         <div className="border-t border-gray-900/40 pt-6 text-center text-xs text-gray-500 tracking-wide">
           <p>
-            &copy; {new Date().getFullYear()} <span className="text-[#E06A28] font-medium">Driksha Infotech Private Limited</span>. All Rights Reserved.
+            &copy; {new Date().getFullYear()}{" "}
+            <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent font-medium">
+              Driksha Infotech Private Limited
+            </span>
+            . All Rights Reserved.
           </p>
         </div>
 

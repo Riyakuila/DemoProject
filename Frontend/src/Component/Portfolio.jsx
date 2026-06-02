@@ -80,7 +80,7 @@ function Portfolio() {
       <section className="relative mx-auto flex min-h-[90vh] max-w-[1450px] flex-col items-center justify-between px-6 pt-36 pb-24 lg:flex-row lg:px-10">
 
         {/* Glow */}
-        <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#ff8c32]/10 blur-[140px]" />
+        <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-yellow-500/10 blur-[140px]" />
 
         {/* LEFT */}
         <motion.div
@@ -89,7 +89,7 @@ function Portfolio() {
           transition={{ duration: 0.7 }}
           className="relative z-10 max-w-2xl"
         >
-          <span className="mb-5 block text-xs font-bold uppercase tracking-[5px] text-[#ff8c32]">
+          <span className="mb-5 block text-xs font-bold uppercase tracking-[5px] text-yellow-500">
             Our Portfolio
           </span>
 
@@ -98,7 +98,7 @@ function Portfolio() {
             <br />
             Experiences That
             <br />
-            <span className="bg-gradient-to-r from-[#ff8c32] to-[#ffb067] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
               Deliver Results
             </span>
           </h1>
@@ -110,12 +110,13 @@ function Portfolio() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <button className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#ff8c32] to-[#ff9e52] px-7 py-4 font-semibold text-black transition hover:scale-[1.03]">
+
+            <button className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-orange-400 to-yellow-500 px-7 py-4 font-semibold text-black transition hover:scale-[1.03]">
               Explore Projects
               <FiArrowRight />
             </button>
 
-            <button className="rounded-xl border border-[#ff8c32]/30 px-7 py-4 font-semibold text-[#ff8c32] transition hover:bg-[#ff8c32]/10">
+            <button className="rounded-xl border border-yellow-500/30 px-7 py-4 font-semibold text-yellow-500 transition hover:bg-yellow-500/10">
               Case Studies
             </button>
           </div>
@@ -128,12 +129,13 @@ function Portfolio() {
           transition={{ duration: 0.8 }}
           className="relative mt-14 flex w-full max-w-xl justify-center lg:mt-0"
         >
-          <div className="rounded-[34px] border border-[#ff8c321f]  p-4 shadow-[0_0_60px_rgba(255,140,50,0.12)]">
+          <div className="rounded-[34px] border border-yellow-500/15 p-4 shadow-[0_0_60px_rgba(250,204,21,0.10)]">
 
-            <div className="h-[350px] w-[520px] rounded-[28px] bg-cover bg-center bg-no-repeat"
-                style={{
-                    backgroundImage: `url(${portfolioHero})`,
-                }}
+            <div
+              className="h-[350px] w-[520px] rounded-[28px] bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: `url(${portfolioHero})`,
+              }}
             />
           </div>
 
@@ -162,9 +164,9 @@ function Portfolio() {
                   repeat: Infinity,
                   delay: i * 0.8,
                 }}
-                className="flex items-center gap-3 rounded-2xl border border-[#ff8c321c] bg-[#0b0b0b]/90 px-4 py-3 backdrop-blur-md"
+                className="flex items-center gap-3 rounded-2xl border border-yellow-500/15 bg-[#0b0b0b]/90 px-4 py-3 backdrop-blur-md"
               >
-                <div className="text-xl text-[#ff8c32]">
+                <div className="text-xl text-yellow-500">
                   {item.icon}
                 </div>
 
@@ -210,9 +212,9 @@ function Portfolio() {
             <motion.div
               whileHover={{ y: -5 }}
               key={i}
-              className="rounded-3xl border border-[#ff8c3216] bg-[#0a0a0a] p-6 text-center transition hover:border-[#ff8c32]/40"
+              className="rounded-3xl border border-yellow-500/10 bg-[#0a0a0a] p-6 text-center transition hover:border-yellow-500/35"
             >
-              <div className="mb-4 flex justify-center text-3xl text-[#ff8c32]">
+              <div className="mb-4 flex justify-center text-3xl text-yellow-500">
                 {item.icon}
               </div>
 
@@ -223,14 +225,13 @@ function Portfolio() {
           ))}
         </div>
       </section>
-
-      {/* PROJECTS */}
+            {/* PROJECTS */}
       <section className="mx-auto max-w-[1450px] px-6 py-28 lg:px-10">
 
         <div className="mb-14 text-center">
           <h2 className="text-4xl font-bold lg:text-5xl">
             Featured{" "}
-            <span className="text-[#ff8c32]">
+            <span className="text-yellow-500">
               Projects
             </span>
           </h2>
@@ -251,8 +252,8 @@ function Portfolio() {
               className={`rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-wider transition-all
               ${
                 activeTab === cat
-                  ? "border-[#ff8c32] bg-[#ff8c32] text-black shadow-[0_0_20px_rgba(255,140,50,0.25)]"
-                  : "border-[#222] bg-[#0b0b0b] text-zinc-400 hover:border-[#ff8c32]/40 hover:text-white"
+                  ? "border-yellow-500 bg-gradient-to-r from-orange-400 to-yellow-500 text-black shadow-[0_0_20px_rgba(250,204,21,0.25)]"
+                  : "border-[#222] bg-[#0b0b0b] text-zinc-400 hover:border-yellow-500/40 hover:text-white"
               }`}
             >
               {cat}
@@ -276,7 +277,7 @@ function Portfolio() {
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.45 }}
                 key={project.id}
-                className="group overflow-hidden rounded-[32px] border border-[#ff8c3218] bg-[#090909]"
+                className="group overflow-hidden rounded-[32px] border border-yellow-500/12 bg-[#090909]"
               >
                 {/* IMAGE */}
                 <div className="relative h-[300px] overflow-hidden border-b border-[#151515] bg-[#111]">
@@ -291,11 +292,11 @@ function Portfolio() {
                 {/* CONTENT */}
                 <div className="p-8">
 
-                  <span className="text-xs font-bold uppercase tracking-[3px] text-[#ff8c32]">
+                  <span className="text-xs font-bold uppercase tracking-[3px] text-yellow-500">
                     {project.category}
                   </span>
 
-                  <h3 className="mt-3 text-2xl font-bold transition group-hover:text-[#ff8c32]">
+                  <h3 className="mt-3 text-2xl font-bold transition group-hover:text-yellow-500">
                     {project.title}
                   </h3>
 
@@ -307,14 +308,14 @@ function Portfolio() {
                     {project.tech.map((tech, i) => (
                       <span
                         key={i}
-                        className="rounded-full border border-[#222] bg-[#111] px-3 py-1 text-xs text-[#ff8c32]"
+                        className="rounded-full border border-[#222] bg-[#111] px-3 py-1 text-xs text-yellow-500"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
 
-                  <button className="mt-8 flex items-center gap-2 font-semibold text-[#ff8c32]">
+                  <button className="mt-8 flex items-center gap-2 font-semibold text-yellow-500">
                     Explore Project
                     <FiArrowRight />
                   </button>
@@ -326,7 +327,7 @@ function Portfolio() {
         </motion.div>
       </section>
 
-            {/* STATS */}
+      {/* STATS */}
       <section className="border-y border-[#151515] bg-gradient-to-b from-black via-[#090909] to-black py-24">
 
         <div className="mx-auto max-w-[1450px] px-6 lg:px-10">
@@ -334,7 +335,7 @@ function Portfolio() {
           <div className="mb-16 text-center">
             <h2 className="text-4xl font-bold lg:text-5xl">
               Our Work.
-              <span className="text-[#ff8c32]">
+              <span className="text-yellow-500">
                 {" "}Their Success.
               </span>
             </h2>
@@ -373,9 +374,9 @@ function Portfolio() {
               <motion.div
                 whileHover={{ y: -5 }}
                 key={i}
-                className="rounded-3xl border border-[#1a1a1a] bg-[#0b0b0b] p-8 text-center transition hover:border-[#ff8c32]/30"
+                className="rounded-3xl border border-[#1a1a1a] bg-[#0b0b0b] p-8 text-center transition hover:border-yellow-500/30"
               >
-                <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ff8c32]/10 text-2xl text-[#ff8c32]">
+                <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-500/10 text-2xl text-yellow-500">
                   {item.icon}
                 </div>
 
@@ -391,174 +392,128 @@ function Portfolio() {
           </div>
         </div>
       </section>
-
-      {/* PROCESS */}
+            {/* TECH STACK */}
       <section className="mx-auto max-w-[1450px] px-6 py-28 lg:px-10">
 
-        <div className="mb-16 text-center">
+        <div className="mb-14 text-center">
           <h2 className="text-4xl font-bold lg:text-5xl">
-            How We Create
-            <span className="text-[#ff8c32]">
-              {" "}Impact
+            Technologies We{" "}
+            <span className="text-yellow-500">
+              Use
             </span>
           </h2>
+
+          <p className="mx-auto mt-5 max-w-2xl text-zinc-400">
+            Modern technology stack powering secure,
+            scalable and future-ready digital solutions.
+          </p>
         </div>
 
-        <div className="relative grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 grid-cols-2 md:grid-cols-4">
 
           {[
             {
-              num: "01",
-              title: "Discover",
-              desc: "We understand business goals and identify the right solution strategy.",
+              icon: <FaReact />,
+              title: "React",
             },
             {
-              num: "02",
-              title: "Design",
-              desc: "Wireframes, architecture and planning aligned with your vision.",
+              icon: <FaNodeJs />,
+              title: "Node.js",
             },
             {
-              num: "03",
-              title: "Build",
-              desc: "Scalable development with modern frameworks and best practices.",
+              icon: <SiMongodb />,
+              title: "MongoDB",
             },
             {
-              num: "04",
-              title: "Deliver",
-              desc: "Deployment, optimization and continuous support for growth.",
+              icon: <SiNextdotjs />,
+              title: "Next.js",
             },
-          ].map((step, i) => (
+            {
+              icon: <FaAws />,
+              title: "AWS",
+            },
+            {
+              icon: <FaDocker />,
+              title: "Docker",
+            },
+            {
+              icon: <SiFirebase />,
+              title: "Firebase",
+            },
+            {
+              icon: <SiPython />,
+              title: "Python",
+            },
+          ].map((tech, i) => (
             <motion.div
+              whileHover={{
+                y: -6,
+              }}
               key={i}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.12 }}
-              whileHover={{ y: -4 }}
-              className="rounded-3xl border border-[#1a1a1a] bg-[#0a0a0a] p-8 transition hover:border-[#ff8c32]/30"
+              className="group rounded-3xl border border-yellow-500/10 bg-[#0a0a0a] p-7 text-center transition hover:border-yellow-500/35 hover:shadow-[0_0_30px_rgba(250,204,21,0.12)]"
             >
-              <div className="mb-5 text-xs font-bold tracking-[4px] text-[#ff8c32]">
-                {step.num}
+              <div className="mb-5 flex justify-center text-4xl text-yellow-500 transition group-hover:scale-110">
+                {tech.icon}
               </div>
 
-              <h3 className="text-2xl font-bold">
-                {step.title}
+              <h3 className="font-medium text-zinc-200">
+                {tech.title}
               </h3>
-
-              <p className="mt-4 leading-8 text-zinc-400">
-                {step.desc}
-              </p>
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* TECH STACK */}
-      <section className="border-t border-[#151515] bg-[#080808] py-24">
-
-        <div className="mx-auto max-w-[1450px] px-6 lg:px-10">
-
-          <div className="mb-14 text-center">
-            <h2 className="text-4xl font-bold lg:text-5xl">
-              Technologies
-              <span className="text-[#ff8c32]">
-                {" "}We Use
-              </span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 gap-5 md:grid-cols-4 lg:grid-cols-8">
-
-            {[
-              {
-                icon: <FaReact />,
-                name: "React",
-              },
-              {
-                icon: <SiNextdotjs />,
-                name: "Next.js",
-              },
-              {
-                icon: <FaNodeJs />,
-                name: "Node.js",
-              },
-              {
-                icon: <SiMongodb />,
-                name: "MongoDB",
-              },
-              {
-                icon: <SiPython />,
-                name: "Python",
-              },
-              {
-                icon: <FaAws />,
-                name: "AWS",
-              },
-              {
-                icon: <SiFirebase />,
-                name: "Firebase",
-              },
-              {
-                icon: <FaDocker />,
-                name: "Docker",
-              },
-            ].map((tech, i) => (
-              <motion.div
-                whileHover={{ y: -5 }}
-                key={i}
-                className="flex flex-col items-center rounded-3xl border border-[#1a1a1a] bg-[#0b0b0b] p-6 transition hover:border-[#ff8c32]/30"
-              >
-                <div className="mb-3 text-4xl text-[#ff8c32]">
-                  {tech.icon}
-                </div>
-
-                <span className="text-sm text-zinc-300">
-                  {tech.name}
-                </span>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
-      <section className="mx-auto max-w-[1450px] px-6 py-24 lg:px-10">
+      <section className="relative overflow-hidden py-28">
 
-        <div className="relative overflow-hidden rounded-[40px] border border-[#ff8c3218] bg-gradient-to-r from-[#0c0c0c] via-[#111] to-[#0c0c0c] p-10 lg:p-16">
+        <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/5 via-transparent to-yellow-500/5" />
 
-          {/* Glow */}
-          <div className="absolute right-0 top-0 h-[300px] w-[300px] rounded-full bg-[#ff8c32]/10 blur-[120px]" />
+        <div className="mx-auto max-w-[1200px] px-6 lg:px-10">
 
-          <div className="relative z-10 flex flex-col items-center justify-between gap-10 lg:flex-row">
+          <motion.div
+            whileHover={{ scale: 1.01 }}
+            className="relative overflow-hidden rounded-[40px] border border-yellow-500/15 bg-[#0a0a0a] px-8 py-14 text-center shadow-[0_0_55px_rgba(250,204,21,0.10)] lg:px-16"
+          >
 
-            <div className="max-w-2xl">
-              <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
-                Let's Build Your Next
+            {/* Glow */}
+            <div className="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-yellow-500/10 blur-[110px]" />
+
+            <div className="relative z-10">
+
+              <span className="text-xs font-bold uppercase tracking-[5px] text-yellow-500">
+                Let's Build Together
+              </span>
+
+              <h2 className="mt-5 text-4xl font-extrabold leading-tight lg:text-5xl">
+                Ready To Turn Your
                 <br />
-                <span className="text-[#ff8c32]">
-                  Digital Success Story
+                Vision Into{" "}
+                <span className="bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
+                  Reality?
                 </span>
               </h2>
 
-              <p className="mt-5 leading-8 text-zinc-400">
-                Have a vision or project in mind?
-                Partner with Driksha Infotech and
-                transform ideas into meaningful
-                digital experiences.
+              <p className="mx-auto mt-6 max-w-2xl leading-8 text-zinc-400">
+                Partner with Driksha Infotech and build
+                scalable digital products designed for
+                growth, performance and long-term impact.
               </p>
+
+              <div className="mt-10 flex flex-wrap justify-center gap-4">
+
+                <button className="rounded-xl bg-gradient-to-r from-orange-400 to-yellow-500 px-7 py-4 font-semibold text-black transition hover:scale-[1.03]">
+                  Start Your Project
+                </button>
+
+                <button className="rounded-xl border border-yellow-500/30 px-7 py-4 font-semibold text-yellow-500 transition hover:bg-yellow-500/10">
+                  Contact Us
+                </button>
+
+              </div>
             </div>
 
-            <div className="flex flex-wrap gap-4">
-
-              <button className="rounded-2xl bg-gradient-to-r from-[#ff8c32] to-[#ff9e52] px-8 py-4 font-semibold text-black transition hover:scale-[1.03]">
-                Start Project
-              </button>
-
-              <button className="rounded-2xl border border-[#ff8c32]/30 px-8 py-4 font-semibold text-[#ff8c32] transition hover:bg-[#ff8c32]/10">
-                Free Consultation
-              </button>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 

@@ -233,47 +233,56 @@ export default function OurProjects() {
     }
   ];
 
-  const filteredProjects = activeTab === 'All Projects' 
+    const filteredProjects = activeTab === 'All Projects' 
     ? projects 
     : projects.filter(project => project.type === activeTab);
 
   return (
     <div className="bg-[#070707] text-white min-h-screen py-16 px-4 md:px-8 relative overflow-hidden font-sans">
-      
-      {/* Background Graphic Effects to match the orange cyber/globe theme */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-orange-600/10 via-transparent to-transparent pointer-events-none" />
-      <div className="absolute top-12 right-0 w-[400px] h-[400px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-orange-500/5 via-zinc-900/10 to-transparent rounded-full pointer-events-none blur-3xl" />
-      
-      {/* Decorative Network Grid lines simulation (top edges) */}
+
+      {/* Background Graphic Effects */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-yellow-500/10 via-transparent to-transparent pointer-events-none" />
+
+      <div className="absolute top-12 right-0 w-[400px] h-[400px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-yellow-500/5 via-zinc-900/10 to-transparent rounded-full pointer-events-none blur-3xl" />
+
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-zinc-800 to-transparent opacity-40" />
 
-      {/* --- HEADER SECTION --- */}
+      {/* HEADER */}
       <div className="max-w-7xl mx-auto text-center mb-12 relative z-10">
+
         <div className="flex items-center justify-center gap-3 mb-2">
-          <div className="h-[2px] w-8 bg-gradient-to-r from-transparent to-orange-500/50" />
-          <span className="text-orange-500 text-md  uppercase tracking-[0.2em]">Our Work, Your Trust</span>
-          <div className="h-[2px] w-8 bg-gradient-to-l from-transparent to-orange-500/50" />
+          <div className="h-[2px] w-8 bg-gradient-to-r from-transparent to-yellow-500/50" />
+
+          <span className="text-md uppercase tracking-[0.2em] bg-gradient-to-r from-orange-400 to-yellow-500 bg-clip-text text-transparent">
+            Our Work, Your Trust
+          </span>
+
+          <div className="h-[2px] w-8 bg-gradient-to-l from-transparent to-yellow-500/50" />
         </div>
-        
+
         <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-          OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 filter drop-shadow-[0_2px_10px_rgba(249,115,22,0.2)]">PROJECTS</span>
+          OUR{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500 filter drop-shadow-[0_2px_10px_rgba(251,191,36,0.25)]">
+            PROJECTS
+          </span>
         </h2>
-        
+
         <p className="text-zinc-400 text-sm md:text-base max-w-xl mx-auto font-light leading-relaxed">
           Explore some of our successful projects that deliver real impact and drive business growth.
         </p>
       </div>
 
-      {/* --- CATEGORY TABS --- */}
+      {/* CATEGORY TABS */}
       <div className="max-w-7xl mx-auto mb-12 flex justify-center overflow-x-auto pb-4 px-2 scrollbar-none relative z-10">
         <div className="flex gap-2.5 bg-zinc-950/60 p-2 rounded-full border border-zinc-900 backdrop-blur-md whitespace-nowrap">
+
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
               className={`px-5 py-2 text-xs font-medium rounded-full transition-all duration-300 ${
                 activeTab === tab
-                  ? 'bg-gradient-to-r from-orange-500 to-amber-600 text-white shadow-lg shadow-orange-500/20'
+                  ? 'bg-gradient-to-r from-orange-400 to-yellow-500 text-black shadow-lg shadow-yellow-500/20'
                   : 'text-zinc-400 hover:text-white hover:bg-zinc-900/60'
               }`}
             >
@@ -283,36 +292,37 @@ export default function OurProjects() {
         </div>
       </div>
 
-      {/* --- PROJECT GRID --- */}
+      {/* PROJECT GRID */}
       <div className="max-w-7xl mx-auto px-2 relative z-10">
-        <motion.div 
+        <motion.div
           layout
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {filteredProjects.map((project, index) => (
+                    {filteredProjects.map((project, index) => (
             <motion.div
               layout
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              whileHover={{ y: -6, borderColor: 'rgba(249, 115, 22, 0.4)' }}
+              whileHover={{ y: -6, borderColor: 'rgba(251,191,36,0.40)' }}
               key={project.title}
               className="bg-gradient-to-b from-zinc-950 to-black border border-zinc-900/80 rounded-xl p-4 flex flex-col justify-between group transition-colors duration-300"
             >
               <div>
-                {/* Mockup Container Frame */}
+                {/* Mockup Container */}
                 <div className="w-full h-44 rounded-lg overflow-hidden border border-zinc-800 bg-zinc-900/50 mb-5 relative flex items-center justify-center">
                   {project.mockup}
-                  {/* Subtle gloss overlay on card cover */}
+
                   <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.02] to-transparent pointer-events-none" />
                 </div>
 
-                {/* Info Content Layout */}
+                {/* Info */}
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="p-2 bg-zinc-900/80 border border-zinc-800 rounded-lg group-hover:border-orange-500/30 transition-colors duration-300">
+                  <div className="p-2 bg-zinc-900/80 border border-zinc-800 rounded-lg group-hover:border-yellow-500/30 transition-colors duration-300">
                     {project.icon}
                   </div>
+
                   <h3 className="text-lg font-bold tracking-tight text-zinc-100 group-hover:text-white pt-1">
                     {project.title}
                   </h3>
@@ -324,8 +334,8 @@ export default function OurProjects() {
               </div>
 
               {/* Action Button */}
-              <button className="w-full py-2.5 rounded-lg border border-orange-500/20 text-orange-400 text-xs font-semibold flex items-center justify-center gap-2 group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-amber-600 group-hover:text-white group-hover:border-transparent transition-all duration-300">
-                View Project 
+              <button className="w-full py-2.5 rounded-lg border border-yellow-500/20 text-yellow-500 text-xs font-semibold flex items-center justify-center gap-2 group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-yellow-500 group-hover:text-black group-hover:border-transparent transition-all duration-300">
+                View Project
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </button>
             </motion.div>
@@ -333,48 +343,61 @@ export default function OurProjects() {
         </motion.div>
       </div>
 
-      {/* --- FOOTER CTA ACCELERATOR BANNER --- */}
+      {/* FOOTER CTA */}
       <div className="max-w-7xl mx-auto mt-20 px-2 relative z-10">
-        <div className="w-full bg-gradient-to-r from-zinc-950 via-black to-zinc-950 border border-zinc-900/80 rounded-2xl p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
-          
-          {/* Faint Background Amber Glow */}
-          <div className="absolute -bottom-20 left-1/3 w-72 h-72 bg-orange-600/10 rounded-full blur-3xl pointer-events-none" />
 
-          {/* Left Element: Vector Rocket & Action Typography */}
+        <div className="w-full bg-gradient-to-r from-zinc-950 via-black to-zinc-950 border border-zinc-900/80 rounded-2xl p-6 md:p-8 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
+
+          {/* Glow */}
+          <div className="absolute -bottom-20 left-1/3 w-72 h-72 bg-yellow-500/10 rounded-full blur-3xl pointer-events-none" />
+
+          {/* Left CTA */}
           <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left z-10">
-            {/* Rocket Icon Container Graphic */}
+
             <div className="relative flex items-center justify-center w-20 h-20 bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden shrink-0">
-              {/* Rocket Vector Flame Line Animations */}
-              <span className="text-4xl filter drop-shadow-[0_4px_10px_rgba(249,115,22,0.4)] animate-bounce">🚀</span>
-              <div className="absolute bottom-1 w-6 h-1 bg-orange-500/40 rounded-full blur-xs opacity-70 animate-pulse" />
+
+              <span className="text-4xl filter drop-shadow-[0_4px_10px_rgba(251,191,36,0.35)] animate-bounce">
+                🚀
+              </span>
+
+              <div className="absolute bottom-1 w-6 h-1 bg-yellow-500/40 rounded-full blur-xs opacity-70 animate-pulse" />
             </div>
 
             <div>
               <h3 className="text-xl md:text-2xl font-black tracking-tight mb-2">
-                Have a <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">Project</span> in Mind?
+                Have a{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500">
+                  Project
+                </span>{" "}
+                in Mind?
               </h3>
+
               <p className="text-zinc-400 text-xs md:text-sm font-light mb-4">
                 Let's build something amazing together!
               </p>
-              <button className="px-6 py-2.5 bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white font-bold text-xs rounded-full flex items-center gap-2 shadow-lg shadow-orange-500/10 transition-all duration-300 transform hover:scale-[1.02]">
+
+              <button className="px-6 py-2.5 bg-gradient-to-r from-orange-400 to-yellow-500 hover:from-orange-500 hover:to-yellow-500 text-black font-bold text-xs rounded-full flex items-center gap-2 shadow-lg shadow-yellow-500/10 transition-all duration-300 transform hover:scale-[1.02]">
                 Get Free Consultation
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>
           </div>
 
-          {/* Right Element: Trust Badges Grid Layout with Dividers */}
+          {/* Trust Badges */}
           <div className="grid grid-cols-2 gap-y-6 gap-x-8 border-t lg:border-t-0 lg:border-l border-zinc-900 pt-6 lg:pt-0 lg:pl-8 z-10 w-full lg:w-auto shrink-0">
+
             {[
-              { icon: <Shield className="w-5 h-5 text-orange-500" />, title: 'Secure Solutions' },
-              { icon: <Clock className="w-5 h-5 text-orange-500" />, title: 'On-Time Delivery' },
-              { icon: <Award className="w-5 h-5 text-orange-500" />, title: 'Quality Assurance' },
-              { icon: <Headphones className="w-5 h-5 text-orange-500" />, title: 'Dedicated Support' }
+              { icon: <Shield className="w-5 h-5 text-yellow-500" />, title: 'Secure Solutions' },
+              { icon: <Clock className="w-5 h-5 text-yellow-500" />, title: 'On-Time Delivery' },
+              { icon: <Award className="w-5 h-5 text-yellow-500" />, title: 'Quality Assurance' },
+              { icon: <Headphones className="w-5 h-5 text-yellow-500" />, title: 'Dedicated Support' }
             ].map((badge, idx) => (
               <div key={idx} className="flex items-center gap-3 group">
-                <div className="p-2 bg-zinc-900/60 border border-zinc-800 rounded-lg group-hover:border-orange-500/20 transition-colors duration-300">
+
+                <div className="p-2 bg-zinc-900/60 border border-zinc-800 rounded-lg group-hover:border-yellow-500/20 transition-colors duration-300">
                   {badge.icon}
                 </div>
+
                 <span className="text-xs font-semibold text-zinc-300 group-hover:text-white transition-colors duration-200">
                   {badge.title}
                 </span>

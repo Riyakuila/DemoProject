@@ -61,25 +61,30 @@ function Testimonials() {
 
         {/* Heading */}
         <div className="text-center">
-          <div className="mx-auto mb-6 flex w-fit items-center gap-3 rounded-full border border-orange-500 px-7 py-3 text-sm font-bold uppercase tracking-wide text-orange-500">
+
+          <div className="mx-auto mb-6 flex w-fit items-center gap-3 rounded-full border border-yellow-500 px-7 py-3 text-sm font-bold uppercase tracking-wide text-yellow-500">
             <FaCommentDots />
             Testimonials
           </div>
 
           <h2 className="text-4xl font-black md:text-6xl">
-            What Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Clients</span> Say
+            What Our{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500">
+              Clients
+            </span>{" "}
+            Say
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-lg text-white/65">
             We take pride in delivering solutions that
-            <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">
+            <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-500">
               {" "}make a difference.
             </span>
             <br />
             Here's what our clients have to say about working with us.
           </p>
 
-          <div className="mx-auto mt-8 h-[2px] w-52 bg-gradient-to-r from-transparent via-orange-500 to-transparent" />
+          <div className="mx-auto mt-8 h-[2px] w-52 bg-gradient-to-r from-transparent via-yellow-500 to-transparent" />
         </div>
 
         {/* Floating Infinite Carousel */}
@@ -130,22 +135,22 @@ function Testimonials() {
                   xl:w-[24vw]
                   rounded-3xl
                   border
-                  border-orange-500/40
+                  border-yellow-500/35
                   bg-white/[0.03]
                   p-7
-                  shadow-[0_0_35px_rgba(255,98,0,0.12)]
+                  shadow-[0_0_35px_rgba(251,191,36,0.12)]
                   backdrop-blur-md
                   transition-all
                   duration-300
-                  hover:border-orange-500
-                  hover:shadow-[0_0_45px_rgba(255,98,0,0.25)]
+                  hover:border-yellow-500
+                  hover:shadow-[0_0_45px_rgba(251,191,36,0.22)]
                 "
               >
                 {/* Top */}
                 <div className="mb-7 flex items-center justify-between">
-                  <FaQuoteLeft className="text-5xl text-orange-500" />
+                                    <FaQuoteLeft className="text-5xl text-yellow-500" />
 
-                  <div className="flex gap-1 text-orange-500">
+                  <div className="flex gap-1 text-yellow-500">
                     {[...Array(5)].map((_, i) => (
                       <FaStar key={i} />
                     ))}
@@ -164,11 +169,11 @@ function Testimonials() {
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="h-16 w-16 rounded-full border-2 border-orange-500 object-cover"
+                    className="h-16 w-16 rounded-full border-2 border-yellow-500 object-cover"
                   />
 
                   <div>
-                    <h3 className="font-bold text-orange-500">
+                    <h3 className="font-bold text-yellow-500">
                       {item.name}
                     </h3>
 
@@ -181,6 +186,7 @@ function Testimonials() {
                     </p>
                   </div>
                 </div>
+
               </motion.div>
             ))}
           </motion.div>
