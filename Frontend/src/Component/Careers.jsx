@@ -177,7 +177,7 @@ function Careers() {
 
     if (!form.phone.trim()) {
       newErrors.phone = "Phone number is required";
-    } else if (form.phone.length < 7 || form.phone.length > 15) {
+    } else if (form.phone.length !== 10) {
       newErrors.phone = "Please enter a valid phone number";
     }
 
@@ -211,7 +211,7 @@ function Careers() {
   };
 
   const handlePhoneChange = (e) => {
-    updateForm("phone", e.target.value.replace(/\D/g, "").slice(0, 15));
+    updateForm("phone", e.target.value.replace(/\D/g, "").slice(0, 10));
   };
 
   const handleFileChange = (e) => {
@@ -480,7 +480,7 @@ function Careers() {
                           error={errors.fullName}
                           placeholder="Your Name"
                           onChange={(e) =>
-                            updateForm("fullName", e.target.value)
+                            updateForm("fullName", e.target.value = e.target.value.replace(/[^a-zA-Z\s]/g, ""))
                           }
                         />
 

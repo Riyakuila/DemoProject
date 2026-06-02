@@ -27,11 +27,11 @@ const services = [
     title: "Web & Mobile App Development",
     desc: "High-performance web and mobile applications for a seamless digital experience.",
   },
- {
-  icon: MdSmartToy,
-  title: "AI Robotics Solutions",
-  desc: "Future-ready AI robots for farming, healthcare, automation, and smart assistance.",
-},
+  {
+    icon: MdSmartToy,
+    title: "AI Robotics Solutions",
+    desc: "Future-ready AI robots for farming, healthcare, automation, and smart assistance.",
+  },
   {
     icon: MdSecurity,
     title: "Cyber Security",
@@ -88,7 +88,7 @@ function Services() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.45, delay: index * 0.06 }}
                 whileHover={{ y: -10, scale: 1.02 }}
-                className="group relative rounded-xl border border-orange-500/40 bg-black/70 p-6 text-center shadow-[0_0_18px_rgba(255,100,0,0.18)] transition-all duration-300 hover:border-orange-400 hover:shadow-[0_0_35px_rgba(255,100,0,0.45)]"
+                className="group relative flex h-full flex-col rounded-xl border border-orange-500/40 bg-black/70 p-6 text-center shadow-[0_0_18px_rgba(255,100,0,0.18)] transition-all duration-300 hover:border-orange-400 hover:shadow-[0_0_35px_rgba(255,100,0,0.45)]"
               >
                 <span className="absolute left-3 top-3 rounded bg-orange-500 px-2 py-1 text-xs font-bold">
                   {String(index + 1).padStart(2, "0")}
@@ -106,9 +106,13 @@ function Services() {
                   {service.desc}
                 </p>
 
-                <button className="mt-5 text-sm font-semibold text-orange-400 transition group-hover:text-orange-300">
-                  Learn More →
-                </button>
+                <div className= "mt-auto">
+
+                  <button className="mt-5 text-sm font-semibold text-orange-400 transition group-hover:text-orange-300">
+                    Learn More →
+                  </button>
+
+                </div>
               </motion.div>
             );
           })}
