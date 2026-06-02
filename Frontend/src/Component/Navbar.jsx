@@ -202,7 +202,7 @@ function Navbar() {
       transition={{ duration: 0.7 }}
       className="fixed left-0 top-0 z-50 w-full border-b border-[#ff8c321a] bg-black/90 backdrop-blur-md"
     >
-      <div className="mx-auto flex h-[92px] max-w-[1430px] items-center justify-between px-4 lg:px-10">
+      <div className="mx-auto flex h-[92px] max-w-[1430px] items-center justify-between px-4 md:px-6 xl:px-10">
         {/* <Link to="/" className="flex flex-col items-start justify-center"> */}
       
         <Link
@@ -217,7 +217,7 @@ function Navbar() {
 
 
               <div className="-mt-1 pl-4">
-                <p className="text-[8px] uppercase tracking-[0.22em] text-white whitespace-nowrap">
+                <p className="hidden sm:block text-[8px] uppercase tracking-[0.22em] text-white whitespace-nowrap">
                   EMPOWERING YOUR
                   <span className="ml-2 text-orange-300">
                     DIGITAL TRANSFORMATION
@@ -228,7 +228,7 @@ function Navbar() {
 
         </Link>
 
-        <div className="hidden items-center gap-12 lg:flex">
+        <div className="hidden items-center gap-10 xl:flex">
           {navItems.map((item) =>
             item.name === "Contact" ? (
               <button
@@ -278,7 +278,7 @@ function Navbar() {
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-3xl text-white lg:hidden"
+          className="text-3xl text-white xl:hidden"
         >
           <HiOutlineMenuAlt3 />
         </button>
@@ -290,7 +290,7 @@ function Navbar() {
           opacity: menuOpen ? 1 : 0,
           y: menuOpen ? 0 : -20,
         }}
-        className={`overflow-hidden border-t border-[#ff8c321a] bg-[#080808] lg:hidden ${
+        className={`overflow-hidden border-t border-[#ff8c321a] bg-[#080808] xl:hidden ${
           menuOpen ? "block" : "hidden"
         }`}
       >
