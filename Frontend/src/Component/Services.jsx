@@ -67,7 +67,7 @@ function Services() {
           <p className="text-sm font-bold uppercase tracking-[0.35em] text-orange-500">
             What We Do
           </p>
-          <h2 className="mt-3 text-5xl font-black italic md:text-7xl">
+          <h2 className="mt-3 text-4xl font-black italic md:text-7xl">
             OUR <span className="text-orange-500">SERVICES</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm text-gray-300 md:text-base">

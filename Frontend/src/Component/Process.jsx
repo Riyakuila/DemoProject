@@ -94,7 +94,7 @@ function Process() {
         </p>
       </div>
 
-      <div className="relative z-10 grid items-stretch gap-10 md:grid-cols-2 xl:grid-cols-6">
+      <div className="relative z-10 grid items-stretch gap-14 md:grid-cols-2 xl:grid-cols-6">
         {processSteps.map((step, index) => (
           <div key={step.number} className="relative flex">
             <motion.div

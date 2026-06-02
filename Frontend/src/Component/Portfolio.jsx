@@ -93,7 +93,7 @@ function Portfolio() {
             Our Portfolio
           </span>
 
-          <h1 className="text-5xl font-extrabold leading-[1.05] lg:text-6xl">
+          <h1 className="text-4xl font-extrabold leading-[1.05] lg:text-6xl">
             Crafting Digital
             <br />
             Experiences That
