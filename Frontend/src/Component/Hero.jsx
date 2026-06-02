@@ -58,7 +58,7 @@ function Hero() {
     ];
 
     return (
-        <section className="relative z-10 max-w-7xl mx-auto px-4 lg:px-12 pt-8 pb-16 flex flex-col justify-center min-h-screen">
+        <section className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-4 pt-28 pb-14 sm:pt-32 md:px-8 md:pt-36 lg:px-12 lg:pt-24 lg:pb-16">
 
                 {/* <div className="pt-6 flex justify-center lg:justify-start">
                     <div className="flex items-center space-x-2 px-4 py-1.5 rounded-full border border-orange-500/30 bg-orange-500/5">
@@ -77,11 +77,11 @@ function Hero() {
                 variants={staggerContainer}
                 initial="hidden"
                 animate="visible"
-                className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center pt-8"
+                className="grid grid-cols-1 items-center gap-12 pt-6 md:gap-14 lg:grid-cols-12 lg:gap-8 lg:pt-8"
             >
 
                 {/* Left Content Side */}
-                <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
+                <div className="space-y-5 text-center lg:col-span-6 lg:text-left">
                     {/* <motion.div variants={fadeInUp} className="inline-block">
                         <div className="flex items-center space-x-2 px-4 py-1.5 rounded-full border border-orange-500/30 bg-orange-500/5 shadow-[0_0_15px_rgba(255,140,50,0.1)]">
                             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
@@ -94,7 +94,7 @@ function Hero() {
                         </div>
                     </motion.div> */}
 
-                    <motion.h1 variants={fadeInUp} className="font-semibold text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-[1.1]">
+                    <motion.h1 variants={fadeInUp} className="relative font-semibold text-3xl leading-[1.15] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
                         We Build <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-amber-600 drop-shadow-[0_2px_10px_rgba(255,140,50,0.2)]">
                             Smart
@@ -103,7 +103,7 @@ function Hero() {
                         For A <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-amber-600 drop-shadow-[0_2px_10px_rgba(255,140,50,0.2)]">
                             Digital Future
                         </span>
-                        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-zinc-900 overflow-hidden rounded-full">
+                        <div className="absolute mt-5 left-0 hidden h-[2px] w-full overflow-hidden rounded-full bg-zinc-900 lg:block w-full h-[2px] bg-zinc-900 overflow-hidden rounded-full">
                             <motion.div
                                 initial={{ x: '100%' }}
                                 animate={{ x: '-100%' }}
@@ -113,32 +113,14 @@ function Hero() {
                         </div>
                     </motion.h1>
 
-                    <motion.div
-                        variants={fadeInUp}
-                        className="relative w-[240px] sm:w-[320px] h-[2px] bg-zinc-800 rounded-full overflow-hidden my-6"
-                    >
-                        {/* Base Glow */}
-                        <div className="absolute inset-0 bg-orange-300 rounded-full"></div>
-
-                        {/* Moving Glow */}
-                        <motion.div
-                            initial={{ x: "-100%" }}
-                            animate={{ x: "220%" }}
-                            transition={{
-                                duration: 2.8,
-                                repeat: Infinity,
-                                ease: "linear",
-                            }}
-                            className="absolute top-0 left-0 w-[40%] h-full bg-gradient-to-r from-transparent via-orange-600 to-transparent shadow-[0_0_14px_#ff8c32]"
-                        />
-                    </motion.div>
+                    
 
                     {/* <motion.p variants={fadeInUp} className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0 font-normal">
                         Driksha Infotech Private Limited delivers innovative software, web, and security solutions
                         that help businesses grow, automate, and lead securely in an ultra-connected digital realm.
                     </motion.p> */}
 
-                    <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <motion.div variants={fadeInUp} className="flex flex-col gap-3 pt-10 sm:flex-row sm:justify-center lg:justify-start">
                         <motion.button
                             whileHover={{ scale: 1.03, boxShadow: '0 0 25px rgba(255,140,50,0.5)' }}
                             whileTap={{ scale: 0.98 }}
@@ -161,7 +143,7 @@ function Hero() {
 
                 {/* Right Graphical Visual Side */}
                 <div
-                    className="lg:col-span-6 flex flex-col items-center justify-center relative lg:mt-0 min-h-[600px] bg-center bg-no-repeat bg-contain"
+                    className="relative flex min-h-[300px] items-center justify-center bg-contain bg-center bg-no-repeat sm:min-h-[380px] md:min-h-[450px] lg:col-span-6 lg:min-h-[560px]"
                     style={{
                         backgroundImage: `url(${laptopImg})`,
                     }}
