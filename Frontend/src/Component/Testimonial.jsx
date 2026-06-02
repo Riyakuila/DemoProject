@@ -67,12 +67,12 @@ function Testimonials() {
           </div>
 
           <h2 className="text-4xl font-black md:text-6xl">
-            What Our <span className="text-orange-500">Clients</span> Say
+            What Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Clients</span> Say
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-lg text-white/65">
             We take pride in delivering solutions that
-            <span className="font-semibold text-orange-500">
+            <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">
               {" "}make a difference.
             </span>
             <br />

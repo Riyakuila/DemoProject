@@ -85,12 +85,12 @@ function Process() {
 
         <h2 className="text-4xl font-black leading-tight md:text-6xl lg:text-6xl">
           Our Process,{" "}
-          <span className="text-orange-500">Your Success</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Your Success</span>
         </h2>
 
         <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-zinc-300 md:text-lg">
           We follow a clear and agile process to transform your ideas into
-          powerful <span className="text-orange-500">digital solutions.</span>
+          powerful <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">digital solutions.</span>
         </p>
       </div>
 
@@ -166,7 +166,7 @@ function Process() {
             <div>
               <h3 className="text-3xl font-black leading-tight md:text-3xl">
                 A Process Built on <br />
-                <span className="text-orange-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">
                   Trust & Transparency
                 </span>
               </h3>

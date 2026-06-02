@@ -96,11 +96,11 @@ function Hero() {
 
                     <motion.h1 variants={fadeInUp} className="relative font-semibold text-3xl leading-[1.15] tracking-tight text-white sm:text-4xl md:text-4xl lg:text-6xl">
                         We Build <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-amber-600 drop-shadow-[0_2px_10px_rgba(255,140,50,0.2)]">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 drop-shadow-[0_2px_10px_rgba(255,140,50,0.2)]">
                             Smart
                         </span> Solutions <br />
 
-                        For A <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-amber-600 drop-shadow-[0_2px_10px_rgba(255,140,50,0.2)]">
+                        For A <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 drop-shadow-[0_2px_10px_rgba(255,140,50,0.2)]">
                             Digital Future
                         </span>
                         <div className="absolute mt-5 left-0 hidden h-[2px] w-full overflow-hidden rounded-full bg-zinc-900 lg:block w-full h-[2px] bg-zinc-900 overflow-hidden rounded-full">

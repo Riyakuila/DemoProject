@@ -256,7 +256,7 @@ export default function OurProjects() {
         </div>
         
         <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-          OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600 filter drop-shadow-[0_2px_10px_rgba(249,115,22,0.2)]">PROJECTS</span>
+          OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 filter drop-shadow-[0_2px_10px_rgba(249,115,22,0.2)]">PROJECTS</span>
         </h2>
         
         <p className="text-zinc-400 text-sm md:text-base max-w-xl mx-auto font-light leading-relaxed">

@@ -87,7 +87,7 @@ export default function BlogSection() {
     <div className="bg-black text-white font-sans selection:bg-orange-500 selection:text-black overflow-x-hidden min-h-screen">
       
       {/* --- HERO / HEADER HEADER --- */}
-      <section className="relative pt-20 pb-12 px-6 lg:px-16 max-w-7xl mx-auto text-center">
+      <section className="relative pt-36 pb-12 px-6 lg:px-16 max-w-7xl mx-auto text-center">
         {/* Glow Layer */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] bg-orange-600/5 blur-[120px] rounded-full pointer-events-none" />
         
@@ -103,7 +103,7 @@ export default function BlogSection() {
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4"
         >
-          Knowledge To Shape Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600">Digital Future</span>
+          Knowledge To Shape Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Digital Future</span>
         </motion.h1>
         <p className="text-gray-400 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
           Deep dives into clean code engineering, UI strategies, and industrial scaling ideas engineered by our team.
@@ -131,7 +131,7 @@ export default function BlogSection() {
                 <span className="bg-orange-500/10 text-orange-400 border border-orange-500/20 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase inline-block mb-4">
                   FEATURED ARTICLE
                 </span>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 group-hover:text-orange-500 transition-colors leading-tight">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 group-hover:text-amber-400 transition-colors leading-tight">
                   {featuredPost.title}
                 </h2>
                 <p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-6">
@@ -213,7 +213,7 @@ export default function BlogSection() {
                     />
                   </div>
                   <span className="text-[10px] tracking-widest text-orange-500 font-bold uppercase block mb-2">{blog.category}</span>
-                  <h3 className="text-base font-bold mb-3 group-hover:text-orange-500 transition-colors line-clamp-2 leading-snug">
+                  <h3 className="text-base font-bold mb-3 group-hover:text-amber-400 transition-colors line-clamp-2 leading-snug">
                     {blog.title}
                   </h3>
                   <p className="text-gray-400 text-xs leading-relaxed mb-5 line-clamp-3">

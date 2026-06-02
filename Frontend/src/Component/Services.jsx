@@ -68,7 +68,7 @@ function Services() {
             What We Do
           </p>
           <h2 className="mt-3 text-4xl font-black italic md:text-7xl">
-            OUR <span className="text-orange-500">SERVICES</span>
+            OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">SERVICES</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm text-gray-300 md:text-base">
             We provide end-to-end digital solutions to help your business grow,

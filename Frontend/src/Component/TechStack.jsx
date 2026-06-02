@@ -67,7 +67,7 @@ export default function TechStack() {
             Technology Stack
           </p>
           <h2 className="text-4xl font-black uppercase md:text-6xl">
-            Built With <span className="text-orange-500">Modern Technologies</span>
+            Built With <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Modern Technologies</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-zinc-300">
             We use modern technologies to build fast, secure and scalable digital products.

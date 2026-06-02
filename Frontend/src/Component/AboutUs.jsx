@@ -109,7 +109,7 @@ function AboutUs() {
             <h1 className="text-5xl font-extrabold leading-tight md:text-5xl">
               Driving Ideas.
               <br />
-              Delivering <span className="text-orange-500">Impact.</span>
+              Delivering <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Impact.</span>
             </h1>
 
             <div className="my-6 h-[2px] w-72 bg-gradient-to-r from-orange-500 to-transparent" />
@@ -169,9 +169,9 @@ function AboutUs() {
               variants={fadeInUp}
             >
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Our <span className="text-[#F37022]">Mission</span> & <span className="text-[#F37022]">Vision</span>
+                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Mission</span> & <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Vision</span>
               </h2>
-              <div className="w-46 h-[2px] bg-[#F37022] mx-auto mt-4" />
+              <div className="w-46 h-[2px] bg-transparent bg-gradient-to-r from-orange-400 to-yellow-400 mx-auto mt-4" />
             </motion.div>
 
             <motion.div
@@ -193,7 +193,7 @@ function AboutUs() {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">
-                    Our <span className="text-[#F37022]">Mission</span>
+                    Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Mission</span>
                   </h3>
                   <p className="text-neutral-200 leading-relaxed text-sm md:text-base">
                     To empower businesses with innovative digital solutions that drive growth, improve efficiency, and accelerate digital transformation through technology, creativity, and strategic execution.
@@ -213,7 +213,7 @@ function AboutUs() {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold mb-3">
-                    Our <span className="text-[#F37022]">Vision</span>
+                    Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Vision</span>
                   </h3>
                   <p className="text-neutral-200 leading-relaxed text-sm md:text-base">
                     To become a globally trusted technology partner, delivering impactful digital experiences and shaping the future of businesses through innovation and excellence.
@@ -233,9 +233,9 @@ function AboutUs() {
               variants={fadeInUp}
             >
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Our <span className="text-[#F37022]">Journey</span>
+                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Journey</span>
               </h2>
-              <div className="w-26 h-[2px] bg-[#F37022] mx-auto mt-4" />
+              <div className="w-26 h-[2px] bg-transparent bg-gradient-to-r from-orange-400 to-yellow-400 mx-auto mt-4" />
             </motion.div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -322,9 +322,9 @@ function AboutUs() {
               variants={fadeInUp}
             >
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Our Core <span className="text-[#F37022]">Values</span>
+                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Core Values</span>
               </h2>
-              <div className="w-16 h-[2px] bg-[#F37022] mx-auto mt-4" />
+              <div className="w-26 h-[2px] bg-transparent bg-gradient-to-r from-orange-400 to-yellow-400 mx-auto mt-4" />
             </motion.div>
 
             <motion.div
@@ -404,7 +404,7 @@ function AboutUs() {
                 </div>
                 <div>
                   <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-2">
-                    Let's Build Something <span className="text-[#F37022]">Amazing Together!</span>
+                    Let's Build Something <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">Amazing Together!</span>
                   </h3>
                   <p className="text-neutral-400 text-sm md:text-base">
                     Have a project in mind? Let's turn your ideas into reality.

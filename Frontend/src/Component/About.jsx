@@ -86,7 +86,7 @@ export default function About() {
                     {/* Top Pill Indicator Badge */}
                     <motion.div variants={fadeInUp} className="self-start">
                         <div className="flex items-center space-x-2.5 px-4 py-1.5 rounded-full border border-orange-500/50 bg-orange-500/[0.03] shadow-[0_0_15px_rgba(255,140,50,0.06)]">
-                            <FaUsers className="text-orange-500 text-md" />
+                            <FaUsers className="bg-gradient-to-r from-orange-400 to-yellow-400 text-md" />
                             <span className="text-[16px] text-zinc-200 leading-none">
                                 About Our Startup
                             </span>
@@ -96,7 +96,7 @@ export default function About() {
                     {/* Calibrated Precision Mixed Weight Heading */}
                     <motion.h2 variants={fadeInUp} className="text-4xl sm:text-5xl lg:text-[52px] tracking-tight leading-[1.15]">
                         <span className="font-semibold text-white block">Building Digital</span>
-                        <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-orange-500 to-orange-600 block mt-1 drop-shadow-[0_2px_15px_rgba(249,115,22,0.15)]">
+                        <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400 block mt-1 drop-shadow-[0_2px_15px_rgba(249,115,22,0.15)]">
                             Solutions for Tomorrow
                         </span>
                     </motion.h2>
