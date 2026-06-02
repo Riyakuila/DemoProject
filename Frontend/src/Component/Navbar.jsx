@@ -1,8 +1,10 @@
+
+
 // import { motion } from "framer-motion";
 // import { HiOutlineMenuAlt3 } from "react-icons/hi";
 // import { useState } from "react";
 // import { Link, useLocation, useNavigate } from "react-router-dom";
-// import logo from "../assets/logo.png";
+// import logo from "../assets/logo3.png";
 
 // function Navbar() {
 //   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +18,7 @@
 //     { name: "Portfolio", path: "/portfolio" },
 //     { name: "Blogs", path: "/blogs" },
 //     { name: "Careers", path: "/careers" },
-//     { name: "Contact", path: "contact" },
+//     { name: "Contact", path: "/contact" },
 //   ];
 
 //   const handleContactClick = () => {
@@ -35,18 +37,40 @@
 //       initial={{ y: -80, opacity: 0 }}
 //       animate={{ y: 0, opacity: 1 }}
 //       transition={{ duration: 0.7 }}
-//       className="fixed top-0 left-0 z-50 w-full border-b border-[#ff8c321a] bg-black/90 backdrop-blur-md"
+//       className="fixed left-0 top-0 z-50 w-full border-b border-[#ff8c321a] bg-black/90 backdrop-blur-md"
 //     >
-//       <div className="mx-auto flex h-[92px] max-w-[1400px] items-center justify-between px-6 lg:px-10">
-//         <Link to="/">
+//       <div className="mx-auto flex h-[92px] max-w-[1430px] items-center justify-between px-4 md:px-6 xl:px-10">
+//         {/* <Link to="/" className="flex flex-col items-start justify-center"> */}
+      
+//         <Link
+//           to="/"
+//           className="flex h-[94px] flex-col items-start justify-start pt-1"
+//         >
 //           <img
 //             src={logo}
-//             alt="logo"
-//             className="w-48 object-contain lg:w-64"
+//             alt="Driksha Infotech"
+//             className="h-24 w-auto object-contain -mt-4"
 //           />
+
+
+
+//               <div className="-mt-4 pl-6">
+//                 <p className="text-[8px] uppercase tracking-[0.22em] text-white whitespace-nowrap">
+
+//               <div className="-mt-1 pl-4">
+//                 <p className="hidden sm:block text-[8px] uppercase tracking-[0.22em] text-white whitespace-nowrap">
+
+//                   EMPOWERING YOUR
+//                   <span className="ml-2 text-orange-300">
+//                     DIGITAL TRANSFORMATION
+//                   </span>
+//                 </p>
+//               </div>
+
+
 //         </Link>
 
-//         <div className="hidden items-center gap-12 lg:flex">
+//         <div className="hidden items-center gap-10 xl:flex">
 //           {navItems.map((item) =>
 //             item.name === "Contact" ? (
 //               <button
@@ -96,7 +120,7 @@
 
 //         <button
 //           onClick={() => setMenuOpen(!menuOpen)}
-//           className="text-3xl text-white lg:hidden"
+//           className="text-3xl text-white xl:hidden"
 //         >
 //           <HiOutlineMenuAlt3 />
 //         </button>
@@ -108,7 +132,7 @@
 //           opacity: menuOpen ? 1 : 0,
 //           y: menuOpen ? 0 : -20,
 //         }}
-//         className={`overflow-hidden border-t border-[#ff8c321a] bg-[#080808] lg:hidden ${
+//         className={`overflow-hidden border-t border-[#ff8c321a] bg-[#080808] xl:hidden ${
 //           menuOpen ? "block" : "hidden"
 //         }`}
 //       >
@@ -163,6 +187,7 @@
 
 
 
+
 import { motion } from "framer-motion";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useState } from "react";
@@ -202,9 +227,7 @@ function Navbar() {
       transition={{ duration: 0.7 }}
       className="fixed left-0 top-0 z-50 w-full border-b border-[#ff8c321a] bg-black/90 backdrop-blur-md"
     >
-      <div className="mx-auto flex h-[92px] max-w-[1430px] items-center justify-between px-4 lg:px-10">
-        {/* <Link to="/" className="flex flex-col items-start justify-center"> */}
-      
+      <div className="mx-auto flex h-[92px] max-w-[1430px] items-center justify-between px-4 md:px-6 xl:px-10">
         <Link
           to="/"
           className="flex h-[94px] flex-col items-start justify-start pt-1"
@@ -212,23 +235,20 @@ function Navbar() {
           <img
             src={logo}
             alt="Driksha Infotech"
-            className="h-24 w-auto object-contain -mt-4"
+            className="h-24 w-auto object-contain -mt-3"
           />
 
-
-              <div className="-mt-4 pl-6">
-                <p className="text-[8px] uppercase tracking-[0.22em] text-white whitespace-nowrap">
-                  EMPOWERING YOUR
-                  <span className="ml-2 text-orange-300">
-                    DIGITAL TRANSFORMATION
-                  </span>
-                </p>
-              </div>
-
-
+          <div className="-mt-4 pl-4">
+            <p className="hidden whitespace-nowrap text-[8px] uppercase tracking-[0.22em] text-white sm:block">
+              EMPOWERING YOUR
+              <span className="ml-2 text-orange-300">
+                DIGITAL TRANSFORMATION
+              </span>
+            </p>
+          </div>
         </Link>
 
-        <div className="hidden items-center gap-12 lg:flex">
+        <div className="hidden items-center gap-10 xl:flex">
           {navItems.map((item) =>
             item.name === "Contact" ? (
               <button
@@ -278,7 +298,7 @@ function Navbar() {
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-3xl text-white lg:hidden"
+          className="text-3xl text-white xl:hidden"
         >
           <HiOutlineMenuAlt3 />
         </button>
@@ -290,7 +310,7 @@ function Navbar() {
           opacity: menuOpen ? 1 : 0,
           y: menuOpen ? 0 : -20,
         }}
-        className={`overflow-hidden border-t border-[#ff8c321a] bg-[#080808] lg:hidden ${
+        className={`overflow-hidden border-t border-[#ff8c321a] bg-[#080808] xl:hidden ${
           menuOpen ? "block" : "hidden"
         }`}
       >
