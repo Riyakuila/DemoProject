@@ -167,7 +167,7 @@ import { motion } from "framer-motion";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo3.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -207,16 +207,16 @@ function Navbar() {
       
         <Link
           to="/"
-          className="flex h-[94px] flex-col items-start justify-center"
+          className="flex h-[94px] flex-col items-start justify-start pt-1"
         >
           <img
             src={logo}
             alt="Driksha Infotech"
-            className="h-16 w-auto object-contain"
+            className="h-24 w-auto object-contain -mt-4"
           />
 
 
-              <div className="-mt-1 pl-4">
+              <div className="-mt-4 pl-6">
                 <p className="text-[8px] uppercase tracking-[0.22em] text-white whitespace-nowrap">
                   EMPOWERING YOUR
                   <span className="ml-2 text-orange-300">

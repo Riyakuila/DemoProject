@@ -80,7 +80,9 @@ function OurService() {
               viewport={{ once: true }}
               transition={{ duration: 0.55, delay: idx * 0.08 }}
               whileHover={{ y: -8 }}
-              className="group relative overflow-hidden rounded-[34px] border border-white/10 bg-white/[0.035] p-5 backdrop-blur-xl transition-all duration-500 hover:border-orange-500/70 hover:shadow-[0_0_45px_rgba(255,115,0,0.22)] md:flex md:items-center md:gap-7"
+              // className="group relative overflow-hidden rounded-[34px] border border-white/10 bg-white/[0.035] p-5 backdrop-blur-xl transition-all duration-500 hover:border-orange-500/70 hover:shadow-[0_0_45px_rgba(255,115,0,0.22)] md:flex md:items-center md:gap-7"
+              className="group relative flex h-full flex-col overflow-hidden rounded-[34px] border border-white/10 bg-white/[0.035] p-5 backdrop-blur-xl transition-all duration-500 hover:border-orange-500/70 hover:shadow-[0_0_45px_rgba(255,115,0,0.22)] md:flex-row md:items-stretch md:gap-7"
+
             >
               <div className="absolute inset-x-8 top-0 h-px scale-x-0 bg-gradient-to-r from-transparent via-orange-500 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
               <div className="absolute inset-x-8 bottom-0 h-px scale-x-0 bg-gradient-to-r from-transparent via-orange-500 to-transparent transition-transform duration-500 group-hover:scale-x-100" />
@@ -109,17 +111,27 @@ function OurService() {
                 />
               </motion.div>
 
-              {/* <div className="relative z-10 mt-7 text-center md:mt-0 md:text-left"> */}
-              <div className="relative z-10 mt-7 flex h-full flex-col text-center md:mt-0 md:text-left">
+              
+              {/* <div className="relative z-10 mt-7 flex flex-1 flex-col justify-between text-center md:mt-0 md:text-left">
                 <h3 className="text-2xl font-black text-white md:text-3xl">
                   {service.name}
                 </h3>
 
+                <p className="mt-4 min-h-[100px] text-base leading-7 text-gray-300">
+                  {service.desc}
+                </p> */}
+
+
+              <div className="relative z-10 mt-7 flex flex-1 flex-col justify-between text-center md:mt-0 md:text-left">
+                <h3 className="text-2xl font-black text-white md:text-3xl">
+                  {service.name}
+                </h3>
                 <p className="mt-4 text-base leading-7 text-gray-300">
                   {service.desc}
                 </p>
 
-                <button className="mt-7 rounded-full border border-white/15 px-6 py-3 text-sm font-bold text-white transition duration-300 group-hover:border-orange-500 group-hover:text-orange-400">
+                  <button className="w-fit rounded-full border border-white/15 px-6 py-3 text-sm font-bold text-white transition duration-300 group-hover:border-orange-500 group-hover:text-orange-400 mx-auto md:mx-0">
+                {/* <button className="mt-auto w-fit rounded-full border border-white/15 px-6 py-3 text-sm font-bold text-white transition duration-300 group-hover:border-orange-500 group-hover:text-orange-400 mx-auto md:mx-0"> */}
                   Explore Service →
                 </button>
               </div>

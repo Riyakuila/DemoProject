@@ -94,7 +94,7 @@ function Hero() {
                         </div>
                     </motion.div> */}
 
-                    <motion.h1 variants={fadeInUp} className="relative font-semibold text-3xl leading-[1.15] tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
+                    <motion.h1 variants={fadeInUp} className="relative font-semibold text-3xl leading-[1.15] tracking-tight text-white sm:text-4xl md:text-4xl lg:text-6xl">
                         We Build <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-500 to-amber-600 drop-shadow-[0_2px_10px_rgba(255,140,50,0.2)]">
                             Smart
