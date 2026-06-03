@@ -4,7 +4,7 @@ import {
   LogOut, Search, Eye, Pencil, Trash2, UserCheck, UserX, UserPlus,
 } from "lucide-react";
 
-import logo from "../assets/logo3.png";
+import logo from "../../assets/logo3.png";
 
 export default function Admin() {
   const [active, setActive] = useState("Dashboard");

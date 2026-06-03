@@ -23,7 +23,7 @@ import {
   SiFirebase,
   SiPython,
 } from "react-icons/si";
-import portfolioHero from "../assets/portfolioHero.png";
+import portfolioHero from "../../assets/portfolioHero.png";
 
 function Portfolio() {
 

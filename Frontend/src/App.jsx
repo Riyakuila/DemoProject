@@ -2,17 +2,17 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
-import Navbar from "./Component/Navbar";
-import Home from "./Component/Home";
-import AboutUs from "./Component/AboutUs";
-import Footer from "./Component/Footer";
-import OurService from "./Component/OurService";
-import Solutions from "./Component/Solutions";
-import Portfolio from "./Component/Portfolio";
-import Blog from "./Component/Blog";
-import Careers from "./Component/Careers";
-import ContactSection from "./Component/Contact";
-import Admin from "./Component/Admin";
+import Navbar from "./Component/Layouts/Navbar";
+import Home from "./Pages/Public/Home";
+import AboutUs from "./Pages/Public/AboutUs";
+import Footer from "./Component/Layouts/Footer";
+import OurService from "./Pages/Public/OurService";
+import Solutions from "./Pages/Public/Solutions";
+import Portfolio from "./Pages/Public/Portfolio";
+import Blog from "./Pages/Public/Blog";
+import Careers from "./Pages/Public/Careers";
+import ContactSection from "./Component/Sections/Contact";
+import Admin from "./Pages/Admin/Admin";
 
 function ScrollToTop() {
   const { pathname } = useLocation();

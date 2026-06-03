@@ -6,7 +6,7 @@ import {
 } from 'react-icons/fa';
 
 // import Govt1 from "../assets/govt1.png";
-import laptopImg from "../assets/hero.png";
+import laptopImg from "../../assets/hero.png";
 
 // Animation Configurations
 const fadeInUp = {

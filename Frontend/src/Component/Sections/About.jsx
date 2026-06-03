@@ -6,8 +6,8 @@ import {
 } from 'react-icons/fa';
 
 // Import local assets exactly as needed
-import aboutBgImg from '../assets/hero.png';
-import teamShowcaseImg from '../assets/abtTeam.png';
+import aboutBgImg from '../../assets/hero.png';
+import teamShowcaseImg from '../../assets/abtTeam.png';
 
 // Framer Motion Variants for Staggered Viewport Entrances
 const containerVariants = {

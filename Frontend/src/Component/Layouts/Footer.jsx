@@ -5,7 +5,7 @@ import {
   FaChevronRight, FaArrowUp 
 } from 'react-icons/fa6';
 
-import Logo from '../assets/logo.png';
+import Logo from '../../assets/logo.png';
 
 export default function Footer() {
   

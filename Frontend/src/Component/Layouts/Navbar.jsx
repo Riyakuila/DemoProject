@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../assets/logo3.png";
+import logo from "../../assets/logo3.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
