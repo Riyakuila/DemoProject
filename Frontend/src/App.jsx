@@ -16,6 +16,7 @@ import ContactSection from "./Component/Sections/Contact";
 import DashboardLayout from "./Dashboard/Layout/DashboardLayout";
 import Dashboard from "./Dashboard/Pages/Dashboard";
 import Users from "./Dashboard/Pages/Users";
+import Services from "./Dashboard/Pages/Services";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -38,6 +39,7 @@ function Layout() {
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="users" element={<Users />} />
+          <Route path="services" element={<Services />} />
         </Route>
       </Routes>
     );
