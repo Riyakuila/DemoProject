@@ -263,14 +263,14 @@ function Careers() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <button
               onClick={scrollToRoles}
-              className="rounded-full bg-orange-500 px-6 py-3 text-sm font-bold text-black shadow-[0_0_30px_rgba(249,115,22,0.55)] transition hover:bg-white"
+              className="rounded-full bg-yellow-400 px-6 py-3 text-sm font-bold text-black shadow-[0_0_30px_rgba(249,115,22,0.55)] transition hover:bg-white"
             >
               View Open Roles
             </button>
 
             <button
               onClick={() => openForm()}
-              className="rounded-full border border-orange-500/60 px-6 py-3 text-sm font-bold text-orange-300 transition hover:bg-orange-500 hover:text-white"
+              className="rounded-full border border-yellow-500/40 px-6 py-3 text-sm font-bold text-orange-300 transition hover:bg-yellow-600 hover:text-white"
             >
               Apply Now
             </button>
@@ -285,7 +285,7 @@ function Careers() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
               viewport={{ once: true }}
-              className="group h-full rounded-2xl border border-white/10 bg-white/[0.035] p-6 transition-all duration-300 hover:border-orange-500/70 hover:bg-orange-500/10 hover:shadow-[0_0_35px_rgba(249,115,22,0.2)]"
+              className="group h-full rounded-2xl border border-white/10 bg-white/[0.035] p-6 transition-all duration-300 hover:border-yellow-500/50 hover:bg-yellow-500/10 hover:shadow-[0_0_35px_rgba(249,115,22,0.2)]"
             >
               <div className={iconBox}>
                 <Icon size={28} />
@@ -343,13 +343,13 @@ function Careers() {
 
                       <button
                         onClick={() => openForm(role.title)}
-                        className="mt-6 text-sm font-bold text-orange-400"
+                        className="mt-6 text-sm font-bold text-yellow-400"
                       >
                         Apply Now
                       </button>
                     </div>
 
-                    <div className="absolute inset-0 rounded-2xl border border-orange-500/50 bg-[#090909] p-6 shadow-[0_0_40px_rgba(249,115,22,0.22)] [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <div className="absolute inset-0 rounded-2xl border border-yellow-500/40 bg-[#090909] p-6 shadow-[0_0_40px_rgba(249,115,22,0.22)] [backface-visibility:hidden] [transform:rotateY(180deg)]">
                       <div className={iconBox}>
                         <Icon size={28} />
                       </div>
@@ -361,7 +361,7 @@ function Careers() {
 
                       <button
                         onClick={() => openForm(role.title)}
-                        className="mt-5 text-sm font-bold text-orange-400"
+                        className="mt-5 text-sm font-bold text-yellow-400"
                       >
                         Apply Now
                       </button>
@@ -373,8 +373,8 @@ function Careers() {
           </div>
         </div>
 
-        <div className="relative mt-20 overflow-hidden rounded-[1rem] border border-orange-500/40 bg-black p-6 shadow-[0_0_35px_rgba(249,115,22,0.18)] md:p-10">
-          <div className="absolute -left-24 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-orange-500/10 blur-[100px]" />
+        <div className="relative mt-20 overflow-hidden rounded-[1rem] border border-yellow-400/30 bg-black p-6 shadow-[0_0_35px_rgba(249,115,22,0.18)] md:p-10">
+          <div className="absolute -left-24 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-yellow-500/10 blur-[100px]" />
           <div className="absolute -right-20 top-10 h-60 w-60 rounded-full bg-white/5 blur-[100px]" />
 
           <div className="relative grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
@@ -384,7 +384,7 @@ function Careers() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <p className="text-sm font-semibold uppercase tracking-[0.15em] text-orange-400">
+              <p className="text-sm font-semibold uppercase tracking-[0.15em] text-yellow-500">
                 Join Driksha
               </p>
 
@@ -399,7 +399,7 @@ function Careers() {
 
               <button
                 onClick={() => openForm()}
-                className="mt-8 rounded-full bg-white px-8 py-3 text-sm font-bold text-black transition hover:bg-orange-500 hover:shadow-[0_0_35px_rgba(249,115,22,0.6)]"
+                className="mt-8 rounded-full bg-white px-8 py-3 text-sm font-bold text-black transition hover:bg-yellow-500 hover:shadow-[0_0_35px_rgba(249,115,22,0.6)]"
               >
                 Apply For Open Roles
               </button>
@@ -417,7 +417,7 @@ function Careers() {
                   key={item}
                   whileHover={{ x: 12, scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 260, damping: 18 }}
-                  className="group flex items-center gap-5 rounded-2xl border border-orange-300/20 bg-white/[0.03] p-5 shadow-[0_0_18px_rgba(249,115,22,0.08)] transition hover:bg-white/[0.10]"
+                  className="group flex items-center gap-5 rounded-2xl border border-yellow-300/20 bg-white/[0.03] p-5 shadow-[0_0_18px_rgba(249,115,22,0.08)] transition hover:bg-white/[0.10]"
                 >
                   <div className={iconBox}>
                     <CheckCircle2 size={23} />
@@ -444,23 +444,23 @@ function Careers() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.94, y: 25 }}
               transition={{ duration: 0.3 }}
-              className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-orange-500/30 bg-[#050505] shadow-[0_0_55px_rgba(249,115,22,0.25)]"
+              className="relative w-full max-w-3xl overflow-hidden rounded-2xl border border-yellow-500/30 bg-[#050505] shadow-[0_0_55px_rgba(249,115,22,0.25)]"
             >
               <button
                 onClick={() => setShowForm(false)}
-                className="absolute right-4 top-4 z-30 rounded-full border border-white/10 bg-white/10 p-2 text-neutral-400 transition hover:border-orange-500 hover:bg-orange-500 hover:text-white"
+                className="absolute right-4 top-4 z-30 rounded-full border border-white/10 bg-white/10 p-2 text-neutral-400 transition hover:border-yellow-400 hover:bg-yellow-400 hover:text-white"
               >
                 <X size={20} />
               </button>
 
-              <div className="pointer-events-none absolute -right-28 -top-28 h-72 w-72 rounded-full bg-orange-500/20 blur-[100px]" />
-              <div className="pointer-events-none absolute -bottom-28 -left-28 h-72 w-72 rounded-full bg-orange-600/15 blur-[100px]" />
+              <div className="pointer-events-none absolute -right-28 -top-28 h-72 w-72 rounded-full bg-yellow-400/20 blur-[100px]" />
+              <div className="pointer-events-none absolute -bottom-28 -left-28 h-72 w-72 rounded-full bg-yellow-500/15 blur-[100px]" />
 
               <div className="relative z-10 max-h-[88vh] overflow-y-auto overflow-x-hidden overscroll-contain p-5 pr-4 md:p-7 md:pr-6">
                 {!submitted ? (
                   <>
                     <div className="mb-6 pr-12">
-                      <p className="mb-2 text-xs font-bold uppercase tracking-[0.24em] text-orange-400">
+                      <p className="mb-2 text-xs font-bold uppercase tracking-[0.24em] text-yellow-400">
                         Career Application
                       </p>
                       <h2 className="text-3xl font-black text-white md:text-4xl">
@@ -507,7 +507,7 @@ function Careers() {
 
                         <div className="group min-w-0 space-y-1.5">
                           <label className="text-sm font-semibold text-neutral-300 transition group-focus-within:text-orange-400">
-                            Position <span className="text-orange-500">*</span>
+                            Position <span className="text-yellow-500">*</span>
                           </label>
 
                           <select
@@ -521,8 +521,8 @@ function Careers() {
                             }}
                             className={`${inputClass} ${
                               errors.position
-                                ? "border-red-500 focus:ring-red-500/20"
-                                : "border-white/10 focus:ring-orange-500/20"
+                                ? "border-yellow-400 focus:ring-yellow-400/20"
+                                : "border-white/10 focus:ring-yellow-400/20"
                             }`}
                           >
                             <option value="" className="bg-black">
@@ -568,7 +568,7 @@ function Careers() {
                       />
 
                       <div className="group min-w-0 space-y-1.5">
-                        <label className="text-sm font-semibold text-neutral-300 transition group-focus-within:text-orange-400">
+                        <label className="text-sm font-semibold text-neutral-300 transition group-focus-within:text-yellow-400">
                           Short Message
                         </label>
 
@@ -579,14 +579,14 @@ function Careers() {
                             updateForm("message", e.target.value)
                           }
                           placeholder="Any message..."
-                          className="w-full min-w-0 resize-none rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-white placeholder:text-neutral-600 outline-none transition duration-300 hover:border-orange-500/60 hover:bg-white/[0.06] focus:border-orange-500 focus:bg-white/[0.07] focus:ring-2 focus:ring-orange-500/20"
+                          className="w-full min-w-0 resize-none rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-white placeholder:text-neutral-600 outline-none transition duration-300 hover:border-yellow-500/60 hover:bg-white/[0.06] focus:border-yellow-500 focus:bg-white/[0.07] focus:ring-2 focus:ring-yellow-500/20"
                         />
                       </div>
 
                       <div className="min-w-0 space-y-1.5">
                         <label className="text-sm font-semibold text-neutral-300">
                           Upload Resume{" "}
-                          <span className="text-orange-500">*</span>
+                          <span className="text-yellow-400">*</span>
                         </label>
 
                         <div
@@ -602,10 +602,10 @@ function Careers() {
                           onDrop={handleDrop}
                           className={`relative min-w-0 cursor-pointer rounded-xl border-2 border-dashed transition duration-300 ${
                             isDragging
-                              ? "border-orange-500 bg-orange-500/10"
+                              ? "border-yellow-500 bg-yellow-400/10"
                               : errors.resume
                               ? "border-red-500/50 bg-red-500/5"
-                              : "border-white/15 bg-white/[0.03] hover:border-orange-500/70 hover:bg-orange-500/5"
+                              : "border-white/15 bg-white/[0.03] hover:border-yellow-500/70 hover:bg-orange-500/5"
                           }`}
                         >
                           <input
@@ -618,7 +618,7 @@ function Careers() {
 
                           {!fileName ? (
                             <div className="flex flex-col items-center justify-center py-6 text-center">
-                              <div className="mb-3 rounded-2xl bg-orange-500/10 p-3 text-orange-400">
+                              <div className="mb-3 rounded-2xl bg-orange-500/10 p-3 text-yellow-400">
                                 <Upload size={20} />
                               </div>
                               <p className="text-sm font-medium text-neutral-300">
@@ -631,7 +631,7 @@ function Careers() {
                           ) : (
                             <div className="flex min-w-0 items-center justify-between px-4 py-3">
                               <div className="flex min-w-0 items-center gap-3 overflow-hidden">
-                                <div className="shrink-0 rounded-xl bg-orange-500/10 p-2 text-orange-400">
+                                <div className="shrink-0 rounded-xl bg-yellow-500/10 p-2 text-yellow-400">
                                   <FileText size={18} />
                                 </div>
                                 <span className="min-w-0 truncate text-sm text-neutral-300">
@@ -664,7 +664,7 @@ function Careers() {
                         type="submit"
                         whileHover={{ scale: 1.015 }}
                         whileTap={{ scale: 0.98 }}
-                        className="group relative mt-5 w-full overflow-hidden rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-3.5 font-bold text-white shadow-[0_0_28px_rgba(249,115,22,0.28)] transition hover:shadow-[0_0_40px_rgba(249,115,22,0.45)]"
+                        className="group relative mt-5 w-full overflow-hidden rounded-xl bg-gradient-to-r from-yellow-400 to-yellow-500 px-6 py-3.5 font-bold text-white shadow-[0_0_28px_rgba(249,115,22,0.28)] transition hover:shadow-[0_0_40px_rgba(249,115,22,0.45)]"
                       >
                         <span className="relative z-10 flex items-center justify-center gap-2">
                           Submit Application
@@ -683,8 +683,8 @@ function Careers() {
                     animate={{ opacity: 1, scale: 1 }}
                     className="flex min-h-[430px] flex-col items-center justify-center text-center"
                   >
-                    <div className="rounded-full bg-orange-500/20 p-4">
-                      <CheckCircle2 size={56} className="text-orange-400" />
+                    <div className="rounded-full bg-yellow-500/20 p-4">
+                      <CheckCircle2 size={56} className="text-yellow-400" />
                     </div>
 
                     <h2 className="mt-6 text-3xl font-bold text-white">
@@ -698,7 +698,7 @@ function Careers() {
 
                     <button
                       onClick={() => setShowForm(false)}
-                      className="mt-8 rounded-full bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-2.5 font-bold text-white transition hover:shadow-lg hover:shadow-orange-500/30"
+                      className="mt-8 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-600 px-8 py-2.5 font-bold text-white transition hover:shadow-lg hover:shadow-yellow-500/30"
                     >
                       Close
                     </button>
@@ -722,15 +722,15 @@ function PhoneInputBox({
 }) {
   return (
     <div className="group min-w-0 space-y-1.5">
-      <label className="text-sm font-semibold text-neutral-300 transition group-focus-within:text-orange-400">
-        Phone Number <span className="text-orange-500">*</span>
+      <label className="text-sm font-semibold text-neutral-300 transition group-focus-within:text-yellow-400">
+        Phone Number <span className="text-yellow-500">*</span>
       </label>
 
       <div className="grid grid-cols-[135px_1fr] gap-3">
         <select
           value={phoneCode}
           onChange={(e) => onCodeChange(e.target.value)}
-          className="w-full min-w-0 rounded-xl border border-white/10 bg-white/[0.04] px-3 py-3 text-sm text-white outline-none transition duration-300 hover:border-orange-500/60 hover:bg-white/[0.06] focus:border-orange-500 focus:bg-white/[0.07] focus:ring-2 focus:ring-orange-500/20"
+          className="w-full min-w-0 rounded-xl border border-white/10 bg-white/[0.04] px-3 py-3 text-sm text-white outline-none transition duration-300 hover:border-yellow-400/60 hover:bg-white/[0.06] focus:border-yellow-500 focus:bg-white/[0.07] focus:ring-2 focus:ring-yellow-400/20"
         >
           {countryOptions.map((country) => (
             <option
@@ -751,7 +751,7 @@ function PhoneInputBox({
           className={`${inputClass} ${
             error
               ? "border-red-500 focus:ring-red-500/20"
-              : "border-white/10 focus:ring-orange-500/20"
+              : "border-white/10 focus:ring-yellow-400/20"
           }`}
         />
       </div>
@@ -772,9 +772,9 @@ function FormInput({
 }) {
   return (
     <div className="group min-w-0 space-y-1.5">
-      <label className="text-sm font-semibold text-neutral-300 transition group-focus-within:text-orange-400">
+      <label className="text-sm font-semibold text-neutral-300 transition group-focus-within:text-yellow-400">
         {label}
-        {required && <span className="text-orange-500"> *</span>}
+        {required && <span className="text-yellow-500"> *</span>}
       </label>
 
       <input
@@ -785,7 +785,7 @@ function FormInput({
         className={`${inputClass} ${
           error
             ? "border-red-500 focus:ring-red-500/20"
-            : "border-white/10 focus:ring-orange-500/20"
+            : "border-white/10 focus:ring-yellow-500/20"
         }`}
       />
 
