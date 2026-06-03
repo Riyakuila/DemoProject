@@ -18,6 +18,9 @@ import Dashboard from "./Dashboard/Pages/Dashboard";
 import Users from "./Dashboard/Pages/Users";
 import Services from "./Dashboard/Pages/Services";
 import Projects from "./Dashboard/Pages/Projects";
+import Enquiries from "./Dashboard/Pages/Enquiries";
+import Blogs from "./Dashboard/Pages/Blogs";
+import Testimonials from "./Dashboard/Pages/Testimonials";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -42,6 +45,9 @@ function Layout() {
           <Route path="users" element={<Users />} />
           <Route path="services" element={<Services />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="enquiries" element={<Enquiries />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="testimonials" element={<Testimonials />} />
         </Route>
       </Routes>
     );
